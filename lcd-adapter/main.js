@@ -12,7 +12,7 @@ const LCD = require("lcdi2c");
 class LCDAdapter {
   constructor() {
     // Initialize the LCD screen
-    this.lcd = new LCD(1, 0x27, 20, 4); // I2C address 0x27, 16 columns, 2 rows
+    this.lcd = new LCD(1, 0x27, 20, 4); // I2C address 0x27, 20 columns, 4 rows
 
     // Initialize the LCD screen with default text
     this.lcd.clear();
@@ -20,8 +20,26 @@ class LCDAdapter {
   }
 
   displayText(text) {
+    // Clear the screen
     this.lcd.clear();
-    this.lcd.print(text);
+
+    // Split text into lines based on the LCD width
+    const lines = this.splitTextToLines(text, 20);
+
+    // Write each line to the corresponding LCD row
+    lines.forEach((line, index) => {
+      if (index < 4) {
+        this.lcd.println(line, index + 1); // Print the line on the specific row
+      }
+    });
+  }
+
+  splitTextToLines(text, lineWidth) {
+    const lines = [];
+    for (let i = 0; i < text.length; i += lineWidth) {
+      lines.push(text.substring(i, i + lineWidth));
+    }
+    return lines;
   }
 }
 
