@@ -1,0 +1,36 @@
+{
+  "name": "thing-url-adapter",
+  "version": "0.5.2",
+  "description": "Native web thing support",
+  "author": "WebThingsIO",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "homepage": "https://github.com/WebThingsIO/thing-url-adapter",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WebThingsIO/thing-url-adapter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WebThingsIO/thing-url-adapter/issues"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "SHA256SUMS",
+    "index.js",
+    "manifest.json",
+    "thing-url-adapter.js"
+  ],
+  "dependencies": {
+    "dnssd": "^0.4.1",
+    "node-fetch": "^2.6.1",
+    "ws": "^7.3.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.10.0"
+  }
+}
