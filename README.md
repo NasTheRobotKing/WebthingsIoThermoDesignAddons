@@ -9,3 +9,5 @@ Le dépôt GitHub WebthingsIoThermoDesignAddons contient deux addons principaux 
 2.	Addon LCD - Utilise le paquet Node.js lcdi2c pour la communication I2C avec un écran LCD (affichage 2004 LCD Display Module HD44780 (20x4))
 Ces addons sont configurés pour être installés sur un Raspberry Pi et fonctionner sur le gateway WebThings.
 
+Link to this repository: https://github.com/NasTheRobotKing/WebthingsIoThermoDesignAddons
+
