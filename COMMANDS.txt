@@ -1,10 +1,9 @@
 > find . -type f ! -path "./node_modules/*" -exec sha256sum {} + > SHA256SUMS
 > sudo systemctl restart webthings-gateway.service
 > journalctl -u webthings-gateway.service -f
+> npm install onoff
 > cd /home/pi/.webthings/addons/thermo-reader 
 > node main.js
->
-
 
 https://www.youtube.com/watch?v=n7dR7K8ZohI
 http://192.168.3.99:8889
