@@ -3,16 +3,22 @@ const { Thing, Property, Value, WebThingServer, SingleThing } = require("webthin
 const LCD = require("lcdi2c");
 const Gpio = require("onoff").Gpio;
 
+// Constants
 const DS18B20_PATH = "/sys/bus/w1/devices/28-2842d446f1da/w1_slave";
 const THRESHOLD_TEMP = 15;
 const DISTANCE_THRESHOLD = 100;
-let warningCleared = false;
-
 const ECHO_PIN = 5;
 const TRIGGER_PIN = 6;
 
-const TRIG = new Gpio(TRIGGER_PIN, 'out');
-const ECHO = new Gpio(ECHO_PIN, 'in', 'both');
+// Ensure sensor file exists
+if (!fs.existsSync(DS18B20_PATH)) {
+  console.error("DS18B20 sensor path does not exist.");
+  process.exit(1);
+}
+
+// GPIO Setup
+const TRIG = new Gpio(TRIGGER_PIN, "out");
+const ECHO = new Gpio(ECHO_PIN, "in", "both");
 
 class TemperatureSensor extends Thing {
   constructor() {
@@ -20,12 +26,15 @@ class TemperatureSensor extends Thing {
       "thermo-reader",
       "Thermo Reader",
       ["TemperatureSensor"],
-      "Reads temperature from a DS18B20 sensor"
+      "Reads temperature and distance from sensors"
     );
 
+    // Properties
     this.temperatureValue = new Value(null);
     this.distanceValue = new Value(null);
+    this.lastValidDistance = null;
 
+    // Add temperature and distance properties
     this.addProperty(
       new Property(this, "temperature", this.temperatureValue, {
         "@type": "TemperatureProperty",
@@ -40,179 +49,155 @@ class TemperatureSensor extends Thing {
     this.addProperty(
       new Property(this, "distance", this.distanceValue, {
         "@type": "DistanceProperty",
-        title: "Distance",
-        type: "number",
+        title: "Distance (cm)",
+        type: "string",
         unit: "cm",
-        description: "The distance in centimeters.",
-        readOnly: true,
+        description: "The distance in centimeters or ∞ if the distance exceeds 300 cm.",
+        readOnly: true
       })
     );
 
+    // Initialize LCD
     this.lcd = new LCD(1, 0x27, 20, 4);
     this.lcd.clear();
     this.lcd.println("Starting...", 1);
 
+    // Start sensor updates
     this.startPeriodicUpdates();
   }
 
   async startPeriodicUpdates() {
-    let state = "OFF";   
-    while(true){
+    while (true) {
       try {
-        const temperature = await readTemperature();
-        console.log(`THERMO-READER -> Temperature updated: ${temperature}C`);
-        this.temperatureValue.set(temperature);
-        
-        const distance = await this.readDistance();
-        console.log("THERMO-READER -> Distance updated:", distance);
-        this.distanceValue.set(distance);
+        // Update temperature and distance
+        await this.updateTemperatureAndDistance();
 
-        if (distance < DISTANCE_THRESHOLD) {
-          state = "ON";
-          this.lcd.on();
-          await this.startOnStateTimer();
-        } else {
-          state = "OFF";
-          console.log("Switching to OFF state");
-          await this.delay(500);
+        // Handle LCD and state logic based on distance
+        const distance = this.distanceValue.get();
+        if (distance === "∞" || distance >= DISTANCE_THRESHOLD) {
           this.lcd.off();
+          console.log("Switching to OFF state");
+        } else if (distance < DISTANCE_THRESHOLD) {
+          this.lcd.on();
+          await this.handleOnState();
         }
       } catch (err) {
-        console.error("THERMO-READER -> Error updating temperature or distance:", err);
+        console.error("Error updating temperature or distance:", err);
         this.lcd.clear();
         this.lcd.println("Error reading data", 1);
       }
+      await this.delay(1000); // Avoid rapid looping
     }
   }
 
-  async startOnStateTimer() {
-    const timerInterval = 7000; // 7 seconds interval timer
-    let elapsedTime = 0;
-  
-    // Loop every second until "timerInterval" seconds have passed
-    while (elapsedTime < timerInterval) {
-      const temperature = await readTemperature();
-      console.log(`THERMO-READER -> Temperature updated: ${temperature}C, Elapsed Time: ${elapsedTime}ms`);
-      this.temperatureValue.set(temperature); // Update the Value
+  async updateTemperatureAndDistance() {
+    try {
+      const temperature = await this.readTemperature();
+      console.log(`Temperature updated: ${temperature}C`);
+      this.temperatureValue.notifyOfExternalUpdate(temperature);
 
       const distance = await this.readDistance();
-      console.log("THERMO-READER -> Distance updated:", distance);
-      this.distanceValue.set(distance);
-  
-      // Display the temperature with blinking if needed
+      console.log(`Distance updated: ${distance}cm`);
+      this.distanceValue.notifyOfExternalUpdate(distance);
+    } catch (error) {
+      console.error("Error reading sensors:", error);
+      throw error;
+    }
+  }
+
+  async handleOnState() {
+    const timerInterval = 7000; // 7 seconds
+    let elapsedTime = 0;
+
+    while (elapsedTime < timerInterval) {
+      await this.updateTemperatureAndDistance();
+
+      const temperature = this.temperatureValue.get();
       if (temperature > THRESHOLD_TEMP) {
-        warningCleared = false;
-        // Blink the temperature
-        this.blinkTemperature(temperature);
-        // Display warning message after blinking
-        this.displayWarning();
+        this.displayWarning(temperature);
       } else {
-        // Clear the warning if temperature is below or equal to 15
-        if (!warningCleared) {
-          this.clearWarning();
-          warningCleared = true;
-          this.lcd.blinkOff();
-        }
-  
-        this.lcd.println(`Temp: ${temperature}C    `, 1);
+        this.lcd.clear();
+        this.lcd.blinkOff();
+        this.lcd.println(`Temp: ${temperature}C`, 1); // Restored original display for temperature
       }
-  
-      // Wait for 1 second (1000 milliseconds) before next loop
+
       await this.delay(1000);
       elapsedTime += 1000;
     }
-  
-    console.log("30 seconds elapsed, checking distance again...");
-  }
-  
-  // Helper function for delays
-  delay(ms) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
-  blinkTemperature(temperature) {
-    // Blink the temperature on the LCD
+  displayWarning(temperature) {
     this.lcd.clear();
     this.lcd.blinkOn();
-    this.lcd.println(`Temp: ${temperature}C    `, 1);
-  }
-
-  displayWarning() {
+    this.lcd.println(`Temp: ${temperature}C`, 1);
     this.lcd.println("AVERTISSEMENT!!!", 2);
     this.lcd.println("VEUILLEZ CALIBRER", 3);
     this.lcd.println("POUR REFROIDIR.", 4);
   }
 
-  clearWarning() {
-    // Clear the entire LCD screen before writing new content
-    this.lcd.clear();
-    // Now display the warning lines again, ensuring no cursor at the end
-    this.lcd.println(" ".repeat(20), 2); // Clear line 2
-    this.lcd.println(" ".repeat(20), 3); // Clear line 3
-    this.lcd.println(" ".repeat(20), 4); // Clear line 4
-  }
-
   delay(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
-  async readDistance() {
-    return new Promise((resolve) => {
-      TRIG.writeSync(0);
-      setTimeout(() => {
-        TRIG.writeSync(1);
-        setTimeout(() => {
-          TRIG.writeSync(0);
-          const startTime = process.hrtime();
-          let start = 0;
-          let end = 0;
+  async readTemperature() {
+    try {
+      const data = fs.readFileSync(DS18B20_PATH, "utf8");
+      const match = data.match(/t=(\d+)/);
+      if (match) {
+        return parseFloat(match[1]) / 1000;
+      }
+      throw new Error("Invalid temperature data");
+    } catch (error) {
+      console.error("Error reading temperature:", error);
+      throw error;
+    }
+  }
 
+  async readDistance() {
+    return new Promise((resolve, reject) => {
+      TRIG.writeSync(0); // Ensure trigger is off
+      setTimeout(() => {
+        TRIG.writeSync(1); // Send a 10µs pulse
+        setTimeout(() => {
+          TRIG.writeSync(0); // Turn off the trigger
+  
+          let start = null;
+          let end = null;
+  
+          const timeout = setTimeout(() => {
+            reject(new Error("Distance reading timed out"));
+          }, 1000);
+  
           const interval = setInterval(() => {
-            if (ECHO.readSync() === 1 && start === 0) {
-              start = process.hrtime(startTime);
-            } else if (ECHO.readSync() === 0 && start !== 0) {
-              end = process.hrtime(startTime);
+            const echoValue = ECHO.readSync(); // Read echo pin state
+  
+            if (echoValue === 1 && start === null) {
+              start = process.hrtime.bigint(); // Record start time
+            } else if (echoValue === 0 && start !== null) {
+              end = process.hrtime.bigint(); // Record end time
               clearInterval(interval);
-              const timeDiff = end[0] * 1e6 + end[1] / 1e3;
-              const distance = (timeDiff / 2) / 29.1;
-              resolve(distance.toFixed(2));
+              clearTimeout(timeout);
+  
+              const duration = Number(end - start) / 1e3; // Convert nanoseconds to microseconds
+              const distance = duration / 58.2; // Calculate distance in cm
+              resolve(distance > 300 ? "∞" : parseFloat(distance.toFixed(1)).toString()); // Return distance as string
             }
           }, 1);
         }, 10);
       }, 2);
     });
-  }
+  }  
 }
 
-function readTemperature() {
-  return new Promise((resolve, reject) => {
-    fs.readFile(DS18B20_PATH, "utf8", (err, data) => {
-      if (err) {
-        reject(`Error reading temperature sensor: ${err}`);
-        return;
-      }
-      const matches = data.match(/t=(\d+)/);
-      if (matches && matches[1]) {
-        resolve(parseInt(matches[1], 10) / 1000.0);
-      } else {
-        reject("Unable to parse temperature data.");
-      }
-    });
-  });
-}
+// Start the WebThing server
+const sensor = new TemperatureSensor();
+const server = new WebThingServer(new SingleThing(sensor), 8888);
+server.start().catch(console.error);
 
-if (!fs.existsSync(DS18B20_PATH)) {
-  console.error("THERMO-READER -> Error: DS18B20 sensor path does not exist.");
-  process.exit(1);
-}
-
-const temperatureSensorThing = new TemperatureSensor();
-const server = new WebThingServer(new SingleThing(temperatureSensorThing), 8888);
-server.start();
-
-process.on('SIGINT', () => {
+// Cleanup GPIO on exit
+process.on("SIGINT", () => {
   TRIG.unexport();
   ECHO.unexport();
-  console.log('GPIO cleanup done.');
+  console.log("GPIO cleanup done.");
   process.exit();
 });
