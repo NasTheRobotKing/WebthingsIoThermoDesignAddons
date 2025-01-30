@@ -6,4 +6,4 @@
 > node main.js
 
 https://www.youtube.com/watch?v=n7dR7K8ZohI
-http://192.168.3.99:8889
+To add anew addon using the URL: http://192.168.3.99:<unused port number>
