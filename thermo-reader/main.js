@@ -5,8 +5,6 @@ const Gpio = require("onoff").Gpio;
 
 // Constants
 const DS18B20_PATH = "/sys/bus/w1/devices/28-2842d446f1da/w1_slave";
-const THRESHOLD_TEMP = 15;
-const DISTANCE_THRESHOLD = 100;
 const ECHO_PIN = 5;
 const TRIGGER_PIN = 6;
 
@@ -29,7 +27,38 @@ class TemperatureSensor extends Thing {
       "Reads temperature and distance from sensors"
     );
 
-    // Properties
+    // Initialize with default thresholds
+    this.temperatureThreshold = new Value(17);
+    this.distanceThreshold = new Value(120);
+
+    // Add configurable properties with min/max values
+    this.addProperty(
+      new Property(this, "temperatureThreshold", this.temperatureThreshold, {
+        "@type": "LevelProperty",
+        title: "Temperature Threshold",
+        type: "number",
+        unit: "degree celsius",
+        description: "Temperature alert threshold (0-30°C)",
+        readOnly: false,
+        minimum: 0, // Minimum value
+        maximum: 30, // Maximum value
+      })
+    );
+
+    this.addProperty(
+      new Property(this, "distanceThreshold", this.distanceThreshold, {
+        "@type": "LevelProperty",
+        title: "Distance Threshold",
+        type: "number",
+        unit: "cm",
+        description: "Distance activation threshold (0-250 cm)",
+        readOnly: false,
+        minimum: 0, // Minimum value
+        maximum: 250, // Maximum value
+      })
+    );
+
+    // Properties for sensor readings
     this.temperatureValue = new Value(null);
     this.distanceValue = new Value(null);
     this.lastValidDistance = null;
@@ -53,7 +82,7 @@ class TemperatureSensor extends Thing {
         type: "string",
         unit: "cm",
         description: "The distance in centimeters or ∞ if the distance exceeds 300 cm.",
-        readOnly: true
+        readOnly: true,
       })
     );
 
@@ -74,10 +103,12 @@ class TemperatureSensor extends Thing {
 
         // Handle LCD and state logic based on distance
         const distance = this.distanceValue.get();
-        if (distance === "∞" || distance >= DISTANCE_THRESHOLD) {
+        const currentDistanceThreshold = this.distanceThreshold.get();
+
+        if (distance === "∞" || distance >= currentDistanceThreshold) {
           this.lcd.off();
           console.log("Switching to OFF state");
-        } else if (distance < DISTANCE_THRESHOLD) {
+        } else if (distance < currentDistanceThreshold) {
           this.lcd.on();
           await this.handleOnState();
         }
@@ -113,7 +144,9 @@ class TemperatureSensor extends Thing {
       await this.updateTemperatureAndDistance();
 
       const temperature = this.temperatureValue.get();
-      if (temperature > THRESHOLD_TEMP) {
+      const currentTempThreshold = this.temperatureThreshold.get();
+
+      if (temperature > currentTempThreshold) {
         this.displayWarning(temperature);
       } else {
         this.lcd.clear();
@@ -160,24 +193,24 @@ class TemperatureSensor extends Thing {
         TRIG.writeSync(1); // Send a 10µs pulse
         setTimeout(() => {
           TRIG.writeSync(0); // Turn off the trigger
-  
+
           let start = null;
           let end = null;
-  
+
           const timeout = setTimeout(() => {
             reject(new Error("Distance reading timed out"));
           }, 1000);
-  
+
           const interval = setInterval(() => {
             const echoValue = ECHO.readSync(); // Read echo pin state
-  
+
             if (echoValue === 1 && start === null) {
               start = process.hrtime.bigint(); // Record start time
             } else if (echoValue === 0 && start !== null) {
               end = process.hrtime.bigint(); // Record end time
               clearInterval(interval);
               clearTimeout(timeout);
-  
+
               const duration = Number(end - start) / 1e3; // Convert nanoseconds to microseconds
               const distance = duration / 58.2; // Calculate distance in cm
               resolve(distance > 300 ? "∞" : parseFloat(distance.toFixed(1)).toString()); // Return distance as string
@@ -186,7 +219,7 @@ class TemperatureSensor extends Thing {
         }, 10);
       }, 2);
     });
-  }  
+  }
 }
 
 // Start the WebThing server
