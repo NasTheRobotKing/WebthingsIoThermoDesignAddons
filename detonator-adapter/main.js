@@ -7,12 +7,19 @@ const {
     Value,
 } = require("webthing");
 const LCD = require("lcdi2c");
+const Gpio = require("onoff").Gpio;
+
+// GPIO Pin for the piezo buzzer
+const PIEZO_PIN = 16;
 
 // Create a class for the LCD Adapter
 class LCDAdapter {
     constructor() {
         // Initialize the LCD screen
         this.lcd = new LCD(1, 0x27, 20, 4); // I2C address 0x27, 20 columns, 4 rows
+
+        // Initialize the piezo buzzer
+        this.piezo = new Gpio(PIEZO_PIN, "out");
 
         // Initialize the LCD screen with default text
         this.lcd.clear();
@@ -31,15 +38,45 @@ class LCDAdapter {
 
     startCountdown() {
         let count = 10;
-        const interval = setInterval(() => {
+        const countdownInterval = setInterval(() => {
             if (count >= 0) {
                 this.displayText("DETONATION SEQUENCE", "BEGINS", `COUNTDOWN: ${count}`);
+                this.beepLong(); // Beep long every second
                 count--;
             } else {
-                clearInterval(interval);
+                clearInterval(countdownInterval);
                 this.displayText("DETONATION SEQUENCE", "BEGINS", "BOOM!");
+                this.beepFast(); // Beep really fast at the end
             }
         }, 1000);
+    }
+
+    beepLong() {
+        this.piezo.writeSync(1); // Turn on the piezo buzzer
+        setTimeout(() => {
+            this.piezo.writeSync(0); // Turn off the piezo buzzer after 500ms
+        }, 500);
+    }
+
+    beepFast() {
+        let beepCount = 0;
+        const fastBeepInterval = setInterval(() => {
+            if (beepCount < 10) { // Beep 10 times
+                this.piezo.writeSync(1); // Turn on the piezo buzzer
+                setTimeout(() => {
+                    this.piezo.writeSync(0); // Turn off the piezo buzzer after 100ms
+                }, 100);
+                beepCount++;
+            } else {
+                clearInterval(fastBeepInterval); // Stop beeping after 10 beeps
+            }
+        }, 200); // Beep every 200ms
+    }
+
+    cleanup() {
+        this.piezo.writeSync(0); // Ensure the buzzer is off
+        this.piezo.unexport(); // Cleanup GPIO
+        this.lcd.close(); // Close the LCD
     }
 }
 
@@ -83,7 +120,7 @@ async function startServer() {
 
     process.on("SIGINT", () => {
         console.log("Shutting down...");
-        lcdThing.lcdAdapter.lcd.close();
+        lcdThing.lcdAdapter.cleanup(); // Cleanup GPIO and LCD
         server.stop();
         process.exit();
     });

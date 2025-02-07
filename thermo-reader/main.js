@@ -7,6 +7,7 @@ const Gpio = require("onoff").Gpio;
 const DS18B20_PATH = "/sys/bus/w1/devices/28-2842d446f1da/w1_slave";
 const ECHO_PIN = 5;
 const TRIGGER_PIN = 6;
+const PIEZO_PIN = 16;
 
 // Ensure sensor file exists
 if (!fs.existsSync(DS18B20_PATH)) {
@@ -14,9 +15,55 @@ if (!fs.existsSync(DS18B20_PATH)) {
   process.exit(1);
 }
 
+// Function to check if a GPIO pin is already exported
+const isGpioExported = (pin) => {
+  return fs.existsSync(`/sys/class/gpio/gpio${pin}`);
+};
+
+// Function to unexport GPIO pins if they are already exported
+const unexportGpio = (pin) => {
+  try {
+    if (isGpioExported(pin)) {
+      fs.writeFileSync(`/sys/class/gpio/unexport`, pin.toString());
+      console.log(`Unexported GPIO${pin}`);
+    } else {
+      console.log(`GPIO${pin} is not exported, skipping unexport.`);
+    }
+  } catch (err) {
+    console.error(`Failed to unexport GPIO${pin}:`, err);
+  }
+};
+
+// Unexport GPIO pins if they are already in use
+unexportGpio(TRIGGER_PIN);
+unexportGpio(ECHO_PIN);
+unexportGpio(PIEZO_PIN);
+
 // GPIO Setup
-const TRIG = new Gpio(TRIGGER_PIN, "out");
-const ECHO = new Gpio(ECHO_PIN, "in", "both");
+let TRIG, ECHO, PIEZO;
+
+try {
+  if (!isGpioExported(TRIGGER_PIN)) {
+    TRIG = new Gpio(TRIGGER_PIN, "out");
+  } else {
+    console.log(`GPIO${TRIGGER_PIN} is already exported.`);
+  }
+
+  if (!isGpioExported(ECHO_PIN)) {
+    ECHO = new Gpio(ECHO_PIN, "in", "both");
+  } else {
+    console.log(`GPIO${ECHO_PIN} is already exported.`);
+  }
+
+  if (!isGpioExported(PIEZO_PIN)) {
+    PIEZO = new Gpio(PIEZO_PIN, "out");
+  } else {
+    console.log(`GPIO${PIEZO_PIN} is already exported.`);
+  }
+} catch (err) {
+  console.error("Failed to initialize GPIO pins:", err);
+  process.exit(1);
+}
 
 class TemperatureSensor extends Thing {
   constructor() {
@@ -30,6 +77,7 @@ class TemperatureSensor extends Thing {
     // Initialize with default thresholds
     this.temperatureThreshold = new Value(17);
     this.distanceThreshold = new Value(120);
+    this.piezoEnabled = new Value(true); // Default to enabled
 
     // Add configurable properties with min/max values
     this.addProperty(
@@ -55,6 +103,17 @@ class TemperatureSensor extends Thing {
         readOnly: false,
         minimum: 0, // Minimum value
         maximum: 250, // Maximum value
+      })
+    );
+
+    // Add piezo enabled property
+    this.addProperty(
+      new Property(this, "piezoEnabled", this.piezoEnabled, {
+        "@type": "BooleanProperty",
+        title: "Piezo Buzzer Enabled",
+        type: "boolean",
+        description: "Enable or disable the piezo buzzer",
+        readOnly: false,
       })
     );
 
@@ -91,8 +150,14 @@ class TemperatureSensor extends Thing {
     this.lcd.clear();
     this.lcd.println("Starting...", 1);
 
+    // State variable for buzzer
+    this.isBuzzerActive = false;
+
     // Start sensor updates
     this.startPeriodicUpdates();
+
+    // Start piezo buzzer control
+    this.startPiezoControl();
   }
 
   async startPeriodicUpdates() {
@@ -117,7 +182,24 @@ class TemperatureSensor extends Thing {
         this.lcd.clear();
         this.lcd.println("Error reading data", 1);
       }
-      await this.delay(1000); // Avoid rapid looping
+      await this.delay(1000); // Main loop delay
+    }
+  }
+
+  async startPiezoControl() {
+    while (true) {
+      const temperature = this.temperatureValue.get();
+      const currentTempThreshold = this.temperatureThreshold.get();
+      const isPiezoEnabled = this.piezoEnabled.get();
+
+      if (temperature > currentTempThreshold && isPiezoEnabled && !this.isBuzzerActive) {
+        this.isBuzzerActive = true; // Set buzzer state to active
+        this.beepPiezo();
+      } else if (temperature <= currentTempThreshold || !isPiezoEnabled) {
+        this.isBuzzerActive = false; // Set buzzer state to inactive
+      }
+
+      await this.delay(100); // Check every 100ms
     }
   }
 
@@ -151,7 +233,7 @@ class TemperatureSensor extends Thing {
       } else {
         this.lcd.clear();
         this.lcd.blinkOff();
-        this.lcd.println(`Temp: ${temperature}C`, 1); // Restored original display for temperature
+        this.lcd.println(`Temp: ${temperature}C`, 1); // Restore normal display
       }
 
       await this.delay(1000);
@@ -166,6 +248,22 @@ class TemperatureSensor extends Thing {
     this.lcd.println("AVERTISSEMENT!!!", 2);
     this.lcd.println("VEUILLEZ CALIBRER", 3);
     this.lcd.println("POUR REFROIDIR.", 4);
+  }
+
+  beepPiezo() {
+    if (!this.isBuzzerActive) return; // Ensure buzzer is not already active
+
+    const beepInterval = setInterval(() => {
+      if (!this.isBuzzerActive) {
+        clearInterval(beepInterval); // Stop beeping if buzzer is turned off
+        return;
+      }
+
+      PIEZO.writeSync(1); // Turn on the piezo buzzer
+      setTimeout(() => {
+        PIEZO.writeSync(0); // Turn off the piezo buzzer after 50ms
+      }, 50);
+    }, 100); // Beep every 100ms
   }
 
   delay(ms) {
@@ -228,9 +326,13 @@ const server = new WebThingServer(new SingleThing(sensor), 8888);
 server.start().catch(console.error);
 
 // Cleanup GPIO on exit
-process.on("SIGINT", () => {
+const cleanup = () => {
   TRIG.unexport();
   ECHO.unexport();
+  PIEZO.unexport();
   console.log("GPIO cleanup done.");
   process.exit();
-});
+};
+
+process.on("SIGINT", cleanup); // Handle Ctrl+C
+process.on("SIGTERM", cleanup); // Handle termination signal
