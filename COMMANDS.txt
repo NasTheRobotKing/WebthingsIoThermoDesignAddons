@@ -7,3 +7,7 @@
 
 https://www.youtube.com/watch?v=n7dR7K8ZohI
 To add anew addon using the URL: http://192.168.3.99:<unused port number>
+
+*To SSH: Need to enable SSH on device, see interface options in command menu: sudo raspi-config. And you need to clear the following file info on Windows: "C:\Users\nfarhat\.ssh\known_hosts"
+
+*To connect to a Pi with the gateway io, once you have flashed the image of the Gateway, the Pi will create a hotspot on the wifi netweork called "Gateway xxxxx" You need to connect to this one and follow instructions. You can then make sure to. If you don't know the IP of the gateway, you can connect to it using the following: http://gateway.local or http://<PI's IP>. But make sure to be on the same network as the gateway in order to obtain the gateway interface.
