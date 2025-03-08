@@ -1,0 +1,17 @@
+{
+  "name": "thermo-reader",
+  "version": "1.0.0",
+  "description": "A WebThings Gateway add-on for reading temperature from DS18B20.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Yugen Farhat",
+  "license": "MIT",
+  "dependencies": {
+    "ds18b20": "^0.1.0",
+    "lcdi2c": "^1.0.6",
+    "onoff": "^6.0.3",
+    "webthing": "^0.15.0"
+  }
+}

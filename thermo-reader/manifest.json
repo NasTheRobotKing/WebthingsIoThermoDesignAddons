@@ -1,0 +1,19 @@
+{
+  "id": "thermo-reader",
+  "name": "Thermo Reader",
+  "version": "1.0.0",
+  "description": "A WebThings Gateway add-on for reading temperature from DS18B20.",
+  "author": "Yugen Farhat",
+  "license": "MIT",
+  "main": "/home/pi/.webthings/addons/thermo-reader/main.js",
+  "manifest_version": 1,
+  "type": "adapter",
+  "gateway_specific_settings": {
+    "webthings": {
+      "primary_type": "temperature-sensor",
+      "exec": "node /home/pi/.webthings/addons/thermo-reader/main.js"
+    }
+  },
+  "homepage_url": "https://github.com/NasTheRobotKing/WebthingsIoThermoDesignAddons",
+  "keywords": ["webthings", "temperature", "ds18b20", "sensor"]
+}
