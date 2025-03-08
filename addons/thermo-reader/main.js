@@ -77,7 +77,8 @@ class TemperatureSensor extends Thing {
     // Initialize with default thresholds
     this.temperatureThreshold = new Value(17);
     this.distanceThreshold = new Value(120);
-    this.piezoEnabled = new Value(false); // Default to enabled
+    this.piezoEnabled = new Value(false); // Default to disabled
+    this.lcdEnabled = new Value(true); // Default to enabled
 
     // Add configurable properties with min/max values
     this.addProperty(
@@ -116,6 +117,18 @@ class TemperatureSensor extends Thing {
         readOnly: false,
       })
     );
+
+        // Add lcdEnabled property to always disable the LCD
+    this.addProperty(
+      new Property(this, "lcdEnabled", this.lcdEnabled, {
+        "@type": "BooleanProperty",
+        title: "LCD Enabled",
+        type: "boolean",
+        description: "Enable or disable the LCD",
+        readOnly: false, // This will prevent changes to this property
+      })
+    );
+
 
     // Properties for sensor readings
     this.temperatureValue = new Value(null);
@@ -165,17 +178,21 @@ class TemperatureSensor extends Thing {
       try {
         // Update temperature and distance
         await this.updateTemperatureAndDistance();
-
         // Handle LCD and state logic based on distance
         const distance = this.distanceValue.get();
         const currentDistanceThreshold = this.distanceThreshold.get();
-
-        if (distance === "∞" || distance >= currentDistanceThreshold) {
+        // Always disable the LCD regardless of other conditions
+        if (!this.lcdEnabled.get()) {
           this.lcd.off();
-          console.log("Switching to OFF state");
-        } else if (distance < currentDistanceThreshold) {
-          this.lcd.on();
-          await this.handleOnState();
+          console.log("LCD is always disabled.");
+        } else {
+          if (distance === "∞" || distance >= currentDistanceThreshold) {
+            this.lcd.off();
+            console.log("Switching to OFF state");
+          } else if (distance < currentDistanceThreshold) {
+            this.lcd.on();
+            await this.handleOnState();
+          }
         }
       } catch (err) {
         console.error("Error updating temperature or distance:", err);

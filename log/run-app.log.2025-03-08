@@ -6269,3 +6269,881 @@
 2025-03-08 01:08:12.268 INFO   : thermo-reader: Distance updated: 56.1cm
 2025-03-08 01:08:14.648 INFO   : thermo-reader: Temperature updated: 19.187C
 2025-03-08 01:08:14.836 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:27:42.827 INFO   : Opening database: /home/pi/.webthings/log/logs.sqlite3
+2025-03-08 01:27:43.393 INFO   : wifi-setup: waitForWiFi: networks exist: [ 'SlaveFib' ]
+2025-03-08 01:27:43.495 INFO   : wifi-setup: waitForWifi: connection found
+2025-03-08 01:27:43.684 INFO   : HTTPS server listening on port 4443
+2025-03-08 01:27:43.686 INFO   : Redirector listening on port 8080
+2025-03-08 01:27:43.720 DEBUG  : Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/schema.json because it has no messageType
+2025-03-08 01:27:46.238 DEBUG  : Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/messages/definitions.json because it has no messageType
+2025-03-08 01:27:51.530 ERROR  : Failed to load add-on detonator-adapter: Error: Add-on not enabled: detonator-adapter
+    at AddonManager.loadAddon (/home/pi/webthings/gateway/build/addon-manager.js:581:19)
+2025-03-08 01:27:51.533 INFO   : Loading add-on: thermo-reader
+2025-03-08 01:27:51.539 ERROR  : Failed to load add-on lcd-adapter: Error: Add-on not enabled: lcd-adapter
+    at AddonManager.loadAddon (/home/pi/webthings/gateway/build/addon-manager.js:581:19)
+2025-03-08 01:27:51.541 INFO   : Loading add-on: thing-url-adapter
+2025-03-08 01:27:53.203 INFO   : thermo-reader: GPIO6 is not exported, skipping unexport.
+2025-03-08 01:27:53.209 INFO   : thermo-reader: GPIO5 is not exported, skipping unexport.
+2025-03-08 01:27:53.212 INFO   : thermo-reader: GPIO16 is not exported, skipping unexport.
+2025-03-08 01:27:54.022 INFO   : thing-url-adapter: Opening database: /home/pi/.webthings/config/db.sqlite3
+2025-03-08 01:27:54.089 INFO   : thing-url-adapter: Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/schema.json because it has no messageType
+2025-03-08 01:27:54.091 INFO   : PageKite connected!
+2025-03-08 01:27:54.097 INFO   : Starting certificate renewal.
+2025-03-08 01:27:54.139 INFO   : Certificate not yet due for renewal.
+2025-03-08 01:27:56.514 INFO   : thermo-reader: Temperature updated: 19.312C
+2025-03-08 01:27:56.638 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:27:56.653 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:27:56.856 INFO   : thing-url-adapter: Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/messages/definitions.json because it has no messageType
+2025-03-08 01:27:58.499 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:27:58.622 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:27:58.640 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:28:00.499 INFO   : thermo-reader: Temperature updated: 19.375C
+2025-03-08 01:28:00.866 INFO   : Checking for add-on updates...
+2025-03-08 01:28:01.527 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:28:01.531 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:28:01.532 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:28:01.534 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:28:01.536 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:28:01.538 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:28:01.540 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:28:01.542 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:28:01.543 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:28:01.545 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:28:01.546 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:28:01.548 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:28:01.848 INFO   : thing-url-adapter: Loading add-on thing-url-adapter from /home/pi/.webthings/addons/thing-url-adapter
+2025-03-08 01:28:02.108 INFO   : thing-url-adapter: Starting mDNS discovery
+2025-03-08 01:28:02.346 WARN   : The "visible" member of property descriptions is deprecated, please update your add-on.
+2025-03-08 01:28:02.349 WARN   : The "visible" member of property descriptions is deprecated, please update your add-on.
+2025-03-08 01:28:02.351 WARN   : The "visible" member of property descriptions is deprecated, please update your add-on.
+2025-03-08 01:28:02.353 WARN   : The "visible" member of property descriptions is deprecated, please update your add-on.
+2025-03-08 01:28:02.355 WARN   : The "visible" member of property descriptions is deprecated, please update your add-on.
+2025-03-08 01:28:02.356 WARN   : The "visible" member of property descriptions is deprecated, please update your add-on.
+2025-03-08 01:28:03.608 INFO   : thermo-reader: Temperature updated: 19.375C
+2025-03-08 01:28:03.710 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:28:03.720 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:28:05.608 INFO   : thermo-reader: Temperature updated: 19.375C
+2025-03-08 01:28:05.770 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:28:05.776 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:28:06.773 INFO   : Finished updating add-ons
+2025-03-08 01:28:07.688 INFO   : thermo-reader: Temperature updated: 19.375C
+2025-03-08 01:28:08.709 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:28:08.711 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:28:08.713 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:28:08.714 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:28:08.715 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:28:08.716 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:28:08.719 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:28:08.720 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:28:08.721 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:28:08.722 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:28:08.723 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:28:08.725 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:28:10.728 INFO   : thermo-reader: Temperature updated: 19.375C
+2025-03-08 01:28:10.844 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:28:10.851 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:28:12.437 INFO   : thing-url-adapter: Failed to connect to http://gateway (2).local:8888: FetchError: request to http://gateway/%20(2).local:8888 failed, reason: connect ECONNREFUSED 127.0.1.1:80
+2025-03-08 01:28:12.728 INFO   : thermo-reader: Temperature updated: 19.375C
+2025-03-08 01:28:12.790 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:28:12.796 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:28:14.648 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:28:15.673 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:28:15.675 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:28:15.676 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:28:15.678 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:28:15.679 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:28:15.680 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:28:15.682 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:28:15.684 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:28:15.685 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:28:15.686 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:28:15.688 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:28:15.689 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:28:17.688 INFO   : thermo-reader: Temperature updated: 19.375C
+2025-03-08 01:28:17.802 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:28:17.809 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:28:19.688 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:28:19.782 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:28:19.788 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:28:21.688 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:28:22.709 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:28:22.711 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:28:22.712 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:28:22.713 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:28:22.714 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:28:22.716 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:28:22.718 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:28:22.719 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:28:22.721 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:28:22.722 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:28:22.723 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:28:22.724 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:28:24.728 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:28:24.830 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:28:24.837 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:28:26.728 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:28:26.811 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:28:26.817 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:28:28.728 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:28:28.842 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:28:28.848 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:28:30.728 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:28:31.749 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:28:31.751 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:28:31.752 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:28:31.754 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:28:31.755 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:28:31.756 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:28:31.758 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:28:31.760 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:28:31.761 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:28:31.762 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:28:31.763 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:28:31.765 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:28:33.768 INFO   : thermo-reader: Temperature updated: 19.375C
+2025-03-08 01:28:33.881 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:28:33.887 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:28:35.768 INFO   : thermo-reader: Temperature updated: 19.375C
+2025-03-08 01:28:35.891 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:28:35.899 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:28:37.768 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:28:37.861 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:28:37.868 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:28:39.768 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:28:40.790 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:28:40.791 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:28:40.793 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:28:40.794 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:28:40.795 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:28:40.797 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:28:40.799 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:28:40.800 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:28:40.802 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:28:40.803 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:28:40.804 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:28:40.805 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:28:42.808 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:28:43.831 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:28:43.833 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:28:43.835 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:28:43.836 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:28:43.838 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:28:43.839 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:28:43.841 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:28:43.842 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:28:43.844 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:28:43.845 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:28:43.846 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:28:43.848 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:28:45.848 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:28:45.951 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:28:45.957 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:28:47.848 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:28:47.962 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:28:47.971 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:28:49.848 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:28:49.963 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:28:49.969 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:28:51.848 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:28:51.931 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:28:51.938 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:28:53.848 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:28:54.869 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:28:54.871 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:28:54.872 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:28:54.874 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:28:54.875 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:28:54.876 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:28:54.878 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:28:54.880 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:28:54.881 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:28:54.882 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:28:54.883 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:28:54.885 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:28:56.888 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:28:56.980 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:28:56.986 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:28:58.888 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:28:58.971 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:28:58.980 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:00.888 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:01.006 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:01.014 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:02.888 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:29:03.912 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:29:03.914 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:29:03.915 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:29:03.917 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:29:03.918 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:29:03.919 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:29:03.921 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:29:03.923 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:29:03.924 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:29:03.925 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:29:03.927 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:29:03.928 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:29:05.928 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:06.951 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:29:06.952 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:29:06.954 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:29:06.956 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:29:06.957 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:29:06.958 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:29:06.960 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:29:06.963 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:29:06.964 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:29:06.966 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:29:06.967 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:29:06.968 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:29:08.968 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:29:09.052 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:09.058 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:10.968 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:11.134 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:11.140 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:13.048 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:13.162 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:13.168 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:15.048 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:15.100 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:15.106 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:16.968 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:17.092 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:17.098 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:18.968 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:19.010 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:19.016 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:20.888 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:20.970 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:20.979 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:22.888 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:23.054 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:23.060 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:24.968 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:25.082 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:25.088 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:26.968 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:27.131 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:27.139 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:29.050 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:29.142 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:29.148 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:31.049 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:31.102 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:31.108 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:32.968 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:33.091 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:33.101 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:34.970 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:35.113 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:35.123 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:37.008 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:37.102 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:37.107 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:38.968 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:29:39.054 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:39.062 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:40.968 INFO   : thermo-reader: Temperature updated: 19.375C
+2025-03-08 01:29:41.060 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:41.067 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:42.968 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:43.991 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:29:43.993 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:29:43.994 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:29:43.996 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:29:43.997 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:29:43.999 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:29:44.001 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:29:44.002 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:29:44.004 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:29:44.005 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:29:44.006 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:29:44.008 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:29:46.008 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:46.149 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:46.154 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:48.008 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:48.101 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:48.107 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:50.008 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:29:51.031 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:29:51.032 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:29:51.034 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:29:51.035 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:29:51.037 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:29:51.038 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:29:51.040 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:29:51.041 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:29:51.043 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:29:51.044 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:29:51.045 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:29:51.047 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:29:53.048 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:29:54.068 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:29:54.070 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:29:54.071 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:29:54.073 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:29:54.074 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:29:54.075 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:29:54.078 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:29:54.079 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:29:54.080 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:29:54.081 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:29:54.083 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:29:54.084 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:29:56.088 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:56.244 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:56.250 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:29:58.088 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:29:58.212 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:29:58.219 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:30:00.088 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:30:00.192 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:30:00.198 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:30:02.098 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:30:02.241 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:30:02.248 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:30:04.098 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:30:04.211 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:30:04.217 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:30:06.088 INFO   : thermo-reader: Temperature updated: 19.375C
+2025-03-08 01:30:06.130 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:30:06.136 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:30:08.008 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:30:08.163 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:30:08.168 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:30:17.888 INFO   : Opening database: /home/pi/.webthings/log/logs.sqlite3
+2025-03-08 01:30:18.469 INFO   : wifi-setup: waitForWiFi: networks exist: [ 'SlaveFib' ]
+2025-03-08 01:30:18.574 INFO   : wifi-setup: waitForWifi: connection found
+2025-03-08 01:30:18.775 INFO   : HTTPS server listening on port 4443
+2025-03-08 01:30:18.778 INFO   : Redirector listening on port 8080
+2025-03-08 01:30:18.810 DEBUG  : Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/schema.json because it has no messageType
+2025-03-08 01:30:21.227 DEBUG  : Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/messages/definitions.json because it has no messageType
+2025-03-08 01:30:26.455 ERROR  : Failed to load add-on detonator-adapter: Error: Add-on not enabled: detonator-adapter
+    at AddonManager.loadAddon (/home/pi/webthings/gateway/build/addon-manager.js:581:19)
+2025-03-08 01:30:26.458 INFO   : Loading add-on: thing-url-adapter
+2025-03-08 01:30:26.465 INFO   : Loading add-on: thermo-reader
+2025-03-08 01:30:26.470 ERROR  : Failed to load add-on lcd-adapter: Error: Add-on not enabled: lcd-adapter
+    at AddonManager.loadAddon (/home/pi/webthings/gateway/build/addon-manager.js:581:19)
+2025-03-08 01:30:28.242 INFO   : thermo-reader: GPIO6 is not exported, skipping unexport.
+2025-03-08 01:30:28.248 INFO   : thermo-reader: GPIO5 is not exported, skipping unexport.
+2025-03-08 01:30:28.252 INFO   : thermo-reader: GPIO16 is not exported, skipping unexport.
+2025-03-08 01:30:28.674 INFO   : thing-url-adapter: Opening database: /home/pi/.webthings/config/db.sqlite3
+2025-03-08 01:30:28.734 INFO   : thing-url-adapter: Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/schema.json because it has no messageType
+2025-03-08 01:30:30.385 INFO   : PageKite connected!
+2025-03-08 01:30:30.392 INFO   : Starting certificate renewal.
+2025-03-08 01:30:30.436 INFO   : Certificate not yet due for renewal.
+2025-03-08 01:30:31.244 INFO   : thing-url-adapter: Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/messages/definitions.json because it has no messageType
+2025-03-08 01:30:31.510 INFO   : thermo-reader: Temperature updated: 19.375C
+2025-03-08 01:30:32.601 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:30:32.603 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:30:32.604 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:30:32.606 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:30:32.608 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:30:32.609 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:30:32.611 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:30:32.613 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:30:32.614 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:30:32.617 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:30:32.619 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:30:32.620 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:30:34.739 INFO   : thermo-reader: Temperature updated: 19.375C
+2025-03-08 01:30:35.743 INFO   : Checking for add-on updates...
+2025-03-08 01:30:36.157 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:30:36.159 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:30:36.160 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:30:36.161 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:30:36.162 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:30:36.164 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:30:36.165 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:30:36.166 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:30:36.167 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:30:36.169 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:30:36.170 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:30:36.171 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:30:36.224 INFO   : thing-url-adapter: Loading add-on thing-url-adapter from /home/pi/.webthings/addons/thing-url-adapter
+2025-03-08 01:30:36.427 INFO   : thing-url-adapter: Starting mDNS discovery
+2025-03-08 01:30:36.656 WARN   : The "visible" member of property descriptions is deprecated, please update your add-on.
+2025-03-08 01:30:36.659 WARN   : The "visible" member of property descriptions is deprecated, please update your add-on.
+2025-03-08 01:30:36.661 WARN   : The "visible" member of property descriptions is deprecated, please update your add-on.
+2025-03-08 01:30:36.664 WARN   : The "visible" member of property descriptions is deprecated, please update your add-on.
+2025-03-08 01:30:36.666 WARN   : The "visible" member of property descriptions is deprecated, please update your add-on.
+2025-03-08 01:30:36.668 WARN   : The "visible" member of property descriptions is deprecated, please update your add-on.
+2025-03-08 01:30:36.762 INFO   : Finished updating add-ons
+2025-03-08 01:30:37.849 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:30:38.881 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:30:38.884 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:30:38.885 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:30:38.886 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:30:38.887 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:30:38.889 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:30:38.891 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:30:38.892 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:30:38.893 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:30:38.895 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:30:38.896 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:30:38.897 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:30:40.888 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:30:40.980 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:30:40.987 INFO   : thermo-reader: Switching to OFF state
+2025-03-08 01:30:42.889 INFO   : thermo-reader: Temperature updated: 19.375C
+2025-03-08 01:30:43.027 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:30:43.033 INFO   : thermo-reader: Switching to OFF state
+2025-03-08 01:30:44.888 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:30:45.911 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:30:45.913 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:30:45.914 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:30:45.916 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:30:45.917 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:30:45.918 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:30:45.920 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:30:45.922 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:30:45.923 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:30:45.924 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:30:45.926 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:30:45.927 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:30:46.722 INFO   : thing-url-adapter: Failed to connect to http://gateway (2).local:8888: FetchError: request to http://gateway/%20(2).local:8888 failed, reason: connect ECONNREFUSED 127.0.1.1:80
+2025-03-08 01:30:47.928 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:30:48.052 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:30:48.058 INFO   : thermo-reader: Switching to OFF state
+2025-03-08 01:30:49.928 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:30:50.053 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:30:50.060 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:30:51.928 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:30:52.949 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:30:52.951 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:30:52.953 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:30:52.954 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:30:52.955 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:30:52.957 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:30:52.958 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:30:52.959 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:30:52.960 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:30:52.961 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:30:52.962 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:30:52.962 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:30:54.968 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:30:55.989 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:30:55.991 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:30:55.992 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:30:55.994 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:30:55.995 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:30:55.997 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:30:55.999 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:30:56.001 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:30:56.002 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:30:56.004 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:30:56.005 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:30:56.007 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:30:58.008 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:30:59.032 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:30:59.033 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:30:59.035 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:30:59.037 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:30:59.039 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:30:59.040 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:30:59.042 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:30:59.044 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:30:59.045 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:30:59.047 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:30:59.048 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:30:59.049 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:31:01.049 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:31:01.142 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:31:01.148 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:31:03.048 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:31:03.153 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:31:03.162 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:31:05.048 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:31:06.076 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:31:06.078 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:31:06.080 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:31:06.082 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:31:06.083 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:31:06.084 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:31:06.087 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:31:06.088 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:31:06.089 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:31:06.090 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:31:06.092 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:31:06.093 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:31:08.089 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:31:08.242 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:31:08.248 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:31:10.088 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:31:10.215 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:31:10.221 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:31:12.089 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:31:12.189 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:31:12.196 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:31:14.088 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:31:15.113 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:31:15.115 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:31:15.117 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:31:15.118 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:31:15.120 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:31:15.121 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:31:15.123 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:31:15.124 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:31:15.126 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:31:15.127 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:31:15.129 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:31:15.130 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:31:17.128 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:31:17.251 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:31:17.258 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:31:19.129 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:31:20.150 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:31:20.152 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:31:20.154 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:31:20.155 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:31:20.157 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:31:20.159 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:31:20.162 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:31:20.163 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:31:20.165 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:31:20.167 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:31:20.169 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:31:20.176 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:31:22.169 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:31:22.272 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:31:22.284 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:31:24.178 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:31:24.243 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:31:24.249 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:31:26.088 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:31:26.234 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:31:26.240 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:31:28.088 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:31:28.212 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:31:28.218 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:31:30.088 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:31:30.203 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:31:30.213 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:31:32.088 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:31:32.212 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:31:32.219 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:31:34.088 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:31:34.231 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:31:34.237 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:31:36.088 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:31:36.207 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:31:36.214 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:31:38.088 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:31:38.173 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:31:38.179 INFO   : thermo-reader: Switching to OFF state
+2025-03-08 01:31:40.090 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:31:41.110 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:31:41.112 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:31:41.113 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:31:41.115 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:31:41.116 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:31:41.117 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:31:41.120 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:31:41.121 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:31:41.122 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:31:41.123 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:31:41.125 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:31:41.126 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:31:43.128 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:31:44.149 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:31:44.151 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:31:44.152 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:31:44.154 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:31:44.155 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:31:44.157 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:31:44.159 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:31:44.161 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:31:44.162 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:31:44.166 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:31:44.168 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:31:44.169 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:31:46.168 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:31:46.291 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:31:46.298 INFO   : thermo-reader: Switching to OFF state
+2025-03-08 01:31:48.169 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:31:49.190 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:31:49.192 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:31:49.194 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:31:49.195 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:31:49.197 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:31:49.198 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:31:49.200 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:31:49.201 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:31:49.202 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:31:49.204 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:31:49.205 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:31:49.206 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:31:51.209 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:31:52.231 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:31:52.233 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:31:52.235 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:31:52.237 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:31:52.239 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:31:52.240 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:31:52.243 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:31:52.245 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:31:52.247 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:31:52.249 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:31:52.250 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:31:52.252 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:31:54.248 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:31:55.273 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:31:55.275 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:31:55.277 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:31:55.278 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:31:55.279 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:31:55.281 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:31:55.283 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:31:55.284 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:31:55.286 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:31:55.287 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:31:55.288 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:31:55.290 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:31:57.297 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:31:58.311 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:31:58.314 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:31:58.316 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:31:58.318 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:31:58.321 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:31:58.323 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:31:58.326 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:31:58.329 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:31:58.330 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:31:58.332 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:31:58.333 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:31:58.335 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:32:00.328 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:32:00.520 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:32:00.526 INFO   : thermo-reader: Switching to OFF state
+2025-03-08 01:32:02.408 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:32:03.432 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:32:03.434 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:32:03.435 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:32:03.436 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:32:03.437 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:32:03.438 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:32:03.441 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:32:03.442 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:32:03.443 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:32:03.444 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:32:03.446 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:32:03.447 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:32:05.528 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:32:05.614 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:32:05.620 INFO   : thermo-reader: Switching to OFF state
+2025-03-08 01:32:07.528 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:32:08.550 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:32:08.552 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:32:08.553 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:32:08.555 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:32:08.556 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:32:08.557 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:32:08.559 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:32:08.560 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:32:08.562 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:32:08.563 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:32:08.564 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:32:08.566 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:32:10.568 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:32:11.590 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:32:11.591 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:32:11.593 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:32:11.594 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:32:11.596 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:32:11.597 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:32:11.599 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:32:11.600 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:32:11.601 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:32:11.603 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:32:11.604 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:32:11.605 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:32:13.608 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:32:13.712 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:32:13.718 INFO   : thermo-reader: Switching to OFF state
+2025-03-08 01:32:15.608 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:32:15.808 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:32:15.816 INFO   : thermo-reader: Switching to OFF state
+2025-03-08 01:32:17.688 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:32:18.712 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:32:18.715 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:32:18.716 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:32:18.717 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:32:18.719 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:32:18.720 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:32:18.722 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:32:18.724 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:314:20)
+2025-03-08 01:32:18.725 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:32:18.726 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:32:18.728 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:32:18.730 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:32:20.729 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:32:20.829 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:32:20.836 INFO   : thermo-reader: Switching to OFF state
+2025-03-08 01:32:22.728 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:32:22.904 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:32:22.913 INFO   : thermo-reader: Switching to OFF state
+2025-03-08 01:32:24.809 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:32:32.982 INFO   : Opening database: /home/pi/.webthings/log/logs.sqlite3
+2025-03-08 01:32:33.540 INFO   : wifi-setup: waitForWiFi: networks exist: [ 'SlaveFib' ]
+2025-03-08 01:32:33.645 INFO   : wifi-setup: waitForWifi: connection found
+2025-03-08 01:32:33.837 INFO   : HTTPS server listening on port 4443
+2025-03-08 01:32:33.840 INFO   : Redirector listening on port 8080
+2025-03-08 01:32:33.873 DEBUG  : Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/schema.json because it has no messageType
+2025-03-08 01:32:36.341 DEBUG  : Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/messages/definitions.json because it has no messageType
+2025-03-08 01:32:41.624 INFO   : Loading add-on: thing-url-adapter
+2025-03-08 01:32:41.633 ERROR  : Failed to load add-on detonator-adapter: Error: Add-on not enabled: detonator-adapter
+    at AddonManager.loadAddon (/home/pi/webthings/gateway/build/addon-manager.js:581:19)
+2025-03-08 01:32:41.636 ERROR  : Failed to load add-on lcd-adapter: Error: Add-on not enabled: lcd-adapter
+    at AddonManager.loadAddon (/home/pi/webthings/gateway/build/addon-manager.js:581:19)
+2025-03-08 01:32:41.638 INFO   : Loading add-on: thermo-reader
+2025-03-08 01:32:43.323 INFO   : thermo-reader: GPIO6 is not exported, skipping unexport.
+2025-03-08 01:32:43.328 INFO   : thermo-reader: GPIO5 is not exported, skipping unexport.
+2025-03-08 01:32:43.332 INFO   : thermo-reader: GPIO16 is not exported, skipping unexport.
+2025-03-08 01:32:43.836 INFO   : thing-url-adapter: Opening database: /home/pi/.webthings/config/db.sqlite3
+2025-03-08 01:32:43.888 INFO   : thing-url-adapter: Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/schema.json because it has no messageType
+2025-03-08 01:32:44.888 INFO   : PageKite connected!
+2025-03-08 01:32:44.906 INFO   : Starting certificate renewal.
+2025-03-08 01:32:44.959 INFO   : Certificate not yet due for renewal.
+2025-03-08 01:32:46.381 INFO   : thing-url-adapter: Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/messages/definitions.json because it has no messageType
+2025-03-08 01:32:46.520 INFO   : thermo-reader: Temperature updated: 19.375C
+2025-03-08 01:32:46.688 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:32:46.694 INFO   : thermo-reader: Switching to OFF state
+2025-03-08 01:32:48.569 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:32:48.592 INFO   : thermo-reader: Distance updated: 58.6cm
+2025-03-08 01:32:49.449 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:32:49.468 INFO   : thermo-reader: Distance updated: 58.8cm
+2025-03-08 01:32:50.279 ERROR  : Failed to get property temperatureThreshold: getProperty: device: http---192.168.3.99-8888 not found.
+2025-03-08 01:32:50.282 ERROR  : Failed to get property distanceThreshold: getProperty: device: http---192.168.3.99-8888 not found.
+2025-03-08 01:32:50.283 ERROR  : Failed to get property piezoEnabled: getProperty: device: http---192.168.3.99-8888 not found.
+2025-03-08 01:32:50.285 ERROR  : Failed to get property lcdEnabled: getProperty: device: http---192.168.3.99-8888 not found.
+2025-03-08 01:32:50.287 ERROR  : Failed to get property temperature: getProperty: device: http---192.168.3.99-8888 not found.
+2025-03-08 01:32:50.288 ERROR  : Failed to get property distance: getProperty: device: http---192.168.3.99-8888 not found.
+2025-03-08 01:32:50.928 INFO   : Checking for add-on updates...
+2025-03-08 01:32:51.357 INFO   : thing-url-adapter: Loading add-on thing-url-adapter from /home/pi/.webthings/addons/thing-url-adapter
+2025-03-08 01:32:51.574 INFO   : thing-url-adapter: Starting mDNS discovery
+2025-03-08 01:32:51.849 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:32:51.909 INFO   : Finished updating add-ons
+2025-03-08 01:32:52.075 WARN   : The "visible" member of property descriptions is deprecated, please update your add-on.
+2025-03-08 01:32:52.079 WARN   : The "visible" member of property descriptions is deprecated, please update your add-on.
+2025-03-08 01:32:52.081 WARN   : The "visible" member of property descriptions is deprecated, please update your add-on.
+2025-03-08 01:32:52.084 WARN   : The "visible" member of property descriptions is deprecated, please update your add-on.
+2025-03-08 01:32:52.086 WARN   : The "visible" member of property descriptions is deprecated, please update your add-on.
+2025-03-08 01:32:52.088 WARN   : The "visible" member of property descriptions is deprecated, please update your add-on.
+2025-03-08 01:32:52.897 ERROR  : thermo-reader: Error reading sensors: Error: Distance reading timed out
+2025-03-08 01:32:52.900 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:316:20)
+2025-03-08 01:32:52.901 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:32:52.902 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:32:52.904 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:32:52.905 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:32:52.907 ERROR  : thermo-reader: Error updating temperature or distance: Error: Distance reading timed out
+2025-03-08 01:32:52.908 ERROR  : thermo-reader:     at Timeout.setTimeout [as _onTimeout] (/home/pi/.webthings/addons/thermo-reader/main.js:316:20)
+2025-03-08 01:32:52.910 ERROR  : thermo-reader:     at ontimeout (timers.js:436:11)
+2025-03-08 01:32:52.911 ERROR  : thermo-reader:     at tryOnTimeout (timers.js:300:5)
+2025-03-08 01:32:52.912 ERROR  : thermo-reader:     at listOnTimeout (timers.js:263:5)
+2025-03-08 01:32:52.914 ERROR  : thermo-reader:     at Timer.processTimers (timers.js:223:10)
+2025-03-08 01:32:54.888 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:32:54.907 INFO   : thermo-reader: Distance updated: 59.3cm
+2025-03-08 01:32:55.768 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:32:55.786 INFO   : thermo-reader: Distance updated: 58.4cm
+2025-03-08 01:32:58.168 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:32:58.355 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:33:00.728 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:33:00.748 INFO   : thermo-reader: Distance updated: 57.5cm
+2025-03-08 01:33:01.946 INFO   : thing-url-adapter: Failed to connect to http://gateway (2).local:8888: FetchError: request to http://gateway/%20(2).local:8888 failed, reason: connect ECONNREFUSED 127.0.1.1:80
+2025-03-08 01:33:03.129 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:33:03.148 INFO   : thermo-reader: Distance updated: 62.6cm
+2025-03-08 01:33:05.528 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:33:05.547 INFO   : thermo-reader: Distance updated: 57.3cm
+2025-03-08 01:33:07.928 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:33:08.012 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:33:10.418 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:33:10.509 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:33:13.848 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:33:13.871 INFO   : thermo-reader: Distance updated: 76.2cm
+2025-03-08 01:33:14.728 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:33:14.748 INFO   : thermo-reader: Distance updated: 76.2cm
+2025-03-08 01:33:17.128 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:33:17.211 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:33:19.608 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:33:19.797 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:33:22.168 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:33:22.191 INFO   : thermo-reader: Distance updated: 57.2cm
+2025-03-08 01:33:24.568 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:33:24.588 INFO   : thermo-reader: Distance updated: 57.3cm
+2025-03-08 01:33:26.970 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:33:26.990 INFO   : thermo-reader: Distance updated: 57.2cm
+2025-03-08 01:33:29.386 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:33:29.389 INFO   : thermo-reader: Distance updated: 64.6cm
+2025-03-08 01:33:32.729 INFO   : thermo-reader: Temperature updated: 19.562C
+2025-03-08 01:33:32.916 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:33:32.923 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:33:34.808 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:33:34.828 INFO   : thermo-reader: Distance updated: 57.1cm
+2025-03-08 01:33:34.836 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:33:36.729 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:33:36.944 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:33:36.952 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:33:38.815 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:33:38.826 INFO   : thermo-reader: Distance updated: 57cm
+2025-03-08 01:33:38.832 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:33:40.736 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:33:40.807 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:33:40.817 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:33:42.768 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:33:42.958 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:33:42.964 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:33:44.818 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:33:44.838 INFO   : thermo-reader: Distance updated: 56.8cm
+2025-03-08 01:33:44.845 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:33:46.728 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:33:46.917 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:33:46.923 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:33:48.812 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:33:48.830 INFO   : thermo-reader: Distance updated: 56.9cm
+2025-03-08 01:33:48.838 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:33:50.728 INFO   : thermo-reader: Temperature updated: 19.562C
+2025-03-08 01:33:50.914 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:33:50.924 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:33:52.808 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:33:52.827 INFO   : thermo-reader: Distance updated: 56.4cm
+2025-03-08 01:33:52.834 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:33:54.728 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:33:54.748 INFO   : thermo-reader: Distance updated: 75.5cm
+2025-03-08 01:33:54.755 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:33:56.648 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:33:56.733 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:33:56.740 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:33:58.648 INFO   : thermo-reader: Temperature updated: 19.562C
+2025-03-08 01:33:58.670 INFO   : thermo-reader: Distance updated: 75.2cm
+2025-03-08 01:33:58.679 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:34:00.568 INFO   : thermo-reader: Temperature updated: 19.562C
+2025-03-08 01:34:00.754 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:34:00.763 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:34:02.648 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:34:02.669 INFO   : thermo-reader: Distance updated: 56.5cm
+2025-03-08 01:34:02.678 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:34:04.568 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:34:04.588 INFO   : thermo-reader: Distance updated: 75.2cm
+2025-03-08 01:34:04.597 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:34:06.488 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:34:06.571 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:34:06.580 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:34:08.488 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:34:08.507 INFO   : thermo-reader: Distance updated: 75.2cm
+2025-03-08 01:34:08.516 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:34:10.408 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:34:10.428 INFO   : thermo-reader: Distance updated: 75.2cm
+2025-03-08 01:34:10.436 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:34:12.328 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:34:12.478 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:34:12.501 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:34:14.329 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:34:14.513 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:34:14.521 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:34:16.408 INFO   : thermo-reader: Temperature updated: 19.437C
+2025-03-08 01:34:16.428 INFO   : thermo-reader: Distance updated: 57cm
+2025-03-08 01:34:16.435 INFO   : thermo-reader: LCD is always disabled.
+2025-03-08 01:34:18.329 INFO   : thermo-reader: Temperature updated: 19.5C
+2025-03-08 01:34:18.430 INFO   : thermo-reader: Distance updated: ∞cm
+2025-03-08 01:34:18.437 INFO   : thermo-reader: LCD is always disabled.
