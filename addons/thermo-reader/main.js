@@ -77,7 +77,7 @@ class TemperatureSensor extends Thing {
     // Initialize with default thresholds
     this.temperatureThreshold = new Value(17);
     this.distanceThreshold = new Value(120);
-    this.piezoEnabled = new Value(true); // Default to enabled
+    this.piezoEnabled = new Value(false); // Default to enabled
 
     // Add configurable properties with min/max values
     this.addProperty(
