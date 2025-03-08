@@ -1,0 +1,161 @@
+2023-01-04 13:34:12.479 INFO   : Creating database: /home/pi/.webthings/log/logs.sqlite3
+2023-01-04 13:34:14.763 INFO   : wifi-setup: isWiFiConfigured: No wifi connection found, starting AP
+2023-01-04 13:34:20.190 INFO   : Starting WiFi setup
+2023-01-04 13:34:26.223 INFO   : wifi-setup: handleCaptive: /
+2023-01-04 13:34:26.225 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:34:26.262 INFO   : wifi-setup: handleRoot: no wifi connection; redirecting to wifiSetup
+2023-01-04 13:37:18.579 INFO   : wifi-setup: handleCaptive: /
+2023-01-04 13:37:18.582 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:37:18.623 INFO   : wifi-setup: handleRoot: no wifi connection; redirecting to wifiSetup
+2023-01-04 13:40:21.470 INFO   : wifi-setup: handleCaptive: /hotspot-detect.html
+2023-01-04 13:40:21.707 INFO   : wifi-setup: handleCaptive: /hotspot.html
+2023-01-04 13:40:25.154 INFO   : wifi-setup: handleCaptive: /hotspot-detect.html
+2023-01-04 13:40:25.196 INFO   : wifi-setup: handleCaptive: /wifi-setup
+2023-01-04 13:40:25.198 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:40:29.210 INFO   : wifi-setup: handleCaptive: /hotspot-detect.html
+2023-01-04 13:40:29.226 INFO   : wifi-setup: handleCaptive: /hotspot.html
+2023-01-04 13:40:29.246 INFO   : wifi-setup: handleCaptive: /css/wifi-setup.css
+2023-01-04 13:40:29.248 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:40:29.257 INFO   : wifi-setup: handleCaptive: /bundle/5647b1deb16cfe6555ab-wifi-setup.js
+2023-01-04 13:40:29.258 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:40:29.291 INFO   : wifi-setup: handleCaptive: /images/wifi-secure.svg
+2023-01-04 13:40:29.293 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:40:29.311 INFO   : wifi-setup: handleCaptive: /images/wifi.svg
+2023-01-04 13:40:29.313 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:40:29.319 INFO   : wifi-setup: handleCaptive: /images/webthings-gateway-lockup.svg
+2023-01-04 13:40:29.320 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:40:29.484 INFO   : wifi-setup: handleCaptive: /settings/localization/language
+2023-01-04 13:40:29.486 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:40:29.501 INFO   : wifi-setup: handleCaptive: /settings/localization/language
+2023-01-04 13:40:29.502 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:40:29.508 INFO   : wifi-setup: handleCaptive: /fonts/opensans-regular.woff2
+2023-01-04 13:40:29.510 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:40:29.532 INFO   : wifi-setup: handleCaptive: /fluent/en-GB/main.ftl
+2023-01-04 13:40:29.534 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:40:29.540 INFO   : wifi-setup: handleCaptive: /fluent/en-GB/main.ftl
+2023-01-04 13:40:29.542 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:40:29.566 INFO   : wifi-setup: handleCaptive: /hotspot-detect.html
+2023-01-04 13:40:29.571 INFO   : wifi-setup: handleCaptive: /fluent/en-US/main.ftl
+2023-01-04 13:40:29.573 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:40:29.576 INFO   : wifi-setup: handleCaptive: /fluent/en-US/main.ftl
+2023-01-04 13:40:29.577 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:40:29.583 INFO   : wifi-setup: handleCaptive: /hotspot.html
+2023-01-04 13:40:29.617 INFO   : wifi-setup: handleCaptive: /fonts/ZillaSlab-Bold.woff2
+2023-01-04 13:40:29.619 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:40:41.701 INFO   : wifi-setup: handleCaptive: /images/back.png
+2023-01-04 13:40:41.703 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:40:41.706 INFO   : wifi-setup: handleCaptive: /images/checkbox-sprite.png
+2023-01-04 13:40:41.707 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:01.964 INFO   : wifi-setup: handleCaptive: /hotspot-detect.html
+2023-01-04 13:47:01.983 INFO   : wifi-setup: handleCaptive: /hotspot.html
+2023-01-04 13:47:04.726 INFO   : wifi-setup: handleCaptive: /hotspot-detect.html
+2023-01-04 13:47:04.757 INFO   : wifi-setup: handleCaptive: /wifi-setup
+2023-01-04 13:47:04.758 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:08.693 INFO   : wifi-setup: handleCaptive: /hotspot-detect.html
+2023-01-04 13:47:08.708 INFO   : wifi-setup: handleCaptive: /hotspot.html
+2023-01-04 13:47:08.727 INFO   : wifi-setup: handleCaptive: /css/wifi-setup.css
+2023-01-04 13:47:08.729 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:08.735 INFO   : wifi-setup: handleCaptive: /bundle/5647b1deb16cfe6555ab-wifi-setup.js
+2023-01-04 13:47:08.736 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:08.759 INFO   : wifi-setup: handleCaptive: /images/wifi-secure.svg
+2023-01-04 13:47:08.762 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:08.780 INFO   : wifi-setup: handleCaptive: /images/wifi.svg
+2023-01-04 13:47:08.782 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:08.786 INFO   : wifi-setup: handleCaptive: /images/webthings-gateway-lockup.svg
+2023-01-04 13:47:08.787 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:08.919 INFO   : wifi-setup: handleCaptive: /settings/localization/language
+2023-01-04 13:47:08.921 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:08.947 INFO   : wifi-setup: handleCaptive: /settings/localization/language
+2023-01-04 13:47:08.949 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:08.963 INFO   : wifi-setup: handleCaptive: /fonts/opensans-regular.woff2
+2023-01-04 13:47:08.965 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:08.987 INFO   : wifi-setup: handleCaptive: /fluent/en-GB/main.ftl
+2023-01-04 13:47:08.989 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:08.993 INFO   : wifi-setup: handleCaptive: /fluent/en-GB/main.ftl
+2023-01-04 13:47:08.994 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:09.019 INFO   : wifi-setup: handleCaptive: /hotspot-detect.html
+2023-01-04 13:47:09.029 INFO   : wifi-setup: handleCaptive: /fluent/en-US/main.ftl
+2023-01-04 13:47:09.031 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:09.037 INFO   : wifi-setup: handleCaptive: /fluent/en-US/main.ftl
+2023-01-04 13:47:09.038 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:09.042 INFO   : wifi-setup: handleCaptive: /hotspot.html
+2023-01-04 13:47:09.082 INFO   : wifi-setup: handleCaptive: /fonts/ZillaSlab-Bold.woff2
+2023-01-04 13:47:09.083 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:11.096 INFO   : wifi-setup: handleCaptive: /images/back.png
+2023-01-04 13:47:11.098 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:11.103 INFO   : wifi-setup: handleCaptive: /images/checkbox-sprite.png
+2023-01-04 13:47:11.104 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:29.497 INFO   : wifi-setup: handleCaptive: /css/connecting.css
+2023-01-04 13:47:29.498 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:29.504 INFO   : wifi-setup: handleCaptive: /bundle/26166873cf37c14ea4ad-connecting.js
+2023-01-04 13:47:29.506 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:29.512 INFO   : wifi-setup: handleCaptive: /hotspot-detect.html
+2023-01-04 13:47:29.537 INFO   : wifi-setup: handleCaptive: /hotspot.html
+2023-01-04 13:47:29.575 INFO   : wifi-setup: handleCaptive: /settings/localization/language
+2023-01-04 13:47:29.577 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:29.581 INFO   : wifi-setup: handleCaptive: /settings/localization/language
+2023-01-04 13:47:29.582 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:29.589 INFO   : wifi-setup: handleCaptive: /fonts/opensans-regular.woff2
+2023-01-04 13:47:29.591 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:29.598 INFO   : wifi-setup: handleCaptive: /fluent/en-GB/main.ftl
+2023-01-04 13:47:29.600 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:29.610 INFO   : wifi-setup: handleCaptive: /fluent/en-GB/main.ftl
+2023-01-04 13:47:29.611 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:29.617 INFO   : wifi-setup: handleCaptive: /hotspot-detect.html
+2023-01-04 13:47:29.624 INFO   : wifi-setup: handleCaptive: /fluent/en-US/main.ftl
+2023-01-04 13:47:29.625 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:29.637 INFO   : wifi-setup: handleCaptive: /fluent/en-US/main.ftl
+2023-01-04 13:47:29.638 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:29.643 INFO   : wifi-setup: handleCaptive: /hotspot.html
+2023-01-04 13:47:29.703 INFO   : wifi-setup: handleCaptive: /fonts/ZillaSlab-Bold.woff2
+2023-01-04 13:47:29.704 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:29.709 INFO   : wifi-setup: handleCaptive: /fonts/opensans-bold.woff2
+2023-01-04 13:47:29.710 INFO   : wifi-setup: handleCaptive: unknown path, skipping.
+2023-01-04 13:47:44.088 INFO   : wifi-setup: waitForWiFi: networks exist: [ 'MiniSlave' ]
+2023-01-04 13:47:44.181 INFO   : wifi-setup: waitForWifi: No wifi connection on attempt 1
+2023-01-04 13:47:47.303 INFO   : wifi-setup: waitForWifi: No wifi connection on attempt 2
+2023-01-04 13:47:50.399 INFO   : wifi-setup: waitForWifi: connection found
+2023-01-04 13:47:53.500 INFO   : wifi-setup: waitForWifi: connection found
+2023-01-04 13:47:53.504 INFO   : Stopping WiFi Setup
+2023-01-04 13:47:53.512 INFO   : HTTP server listening on port 8080
+2023-01-04 13:47:53.675 DEBUG  : Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/schema.json because it has no messageType
+2023-01-04 13:47:56.172 DEBUG  : Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/messages/definitions.json because it has no messageType
+2023-01-04 13:48:10.986 INFO   : Checking for add-on updates...
+2023-01-04 13:48:11.414 INFO   : Loading add-on: thing-url-adapter
+2023-01-04 13:48:11.421 INFO   : Loading add-on: zwave-adapter
+2023-01-04 13:48:11.424 INFO   : Loading add-on: zigbee-adapter
+2023-01-04 13:48:11.939 ERROR  : Failed to parse add-on list: { FetchError: request to https://api.webthings.io:8443/addons?arch=linux-arm&version=1.1.0&node=64&python=2.7%2C3.7 failed, reason: certificate is not yet valid
+    at ClientRequest.<anonymous> (/home/pi/webthings/gateway/node_modules/node-fetch/lib/index.js:1491:11)
+    at ClientRequest.emit (events.js:198:13)
+    at TLSSocket.socketErrorListener (_http_client.js:401:9)
+    at TLSSocket.emit (events.js:198:13)
+    at emitErrorNT (internal/streams/destroy.js:91:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+  message:
+   'request to https://api.webthings.io:8443/addons?arch=linux-arm&version=1.1.0&node=64&python=2.7%2C3.7 failed, reason: certificate is not yet valid',
+  type: 'system',
+  errno: 'CERT_NOT_YET_VALID',
+  code: 'CERT_NOT_YET_VALID' }
+2023-01-04 13:48:13.828 INFO   : thing-url-adapter: Opening database: /home/pi/.webthings/config/db.sqlite3
+2023-01-04 13:48:13.893 INFO   : thing-url-adapter: Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/schema.json because it has no messageType
+2023-01-04 13:48:13.918 INFO   : zigbee-adapter: Opening database: /home/pi/.webthings/config/db.sqlite3
+2023-01-04 13:48:13.992 INFO   : zigbee-adapter: Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/schema.json because it has no messageType
+2023-01-04 13:48:14.477 INFO   : zwave-adapter: Opening database: /home/pi/.webthings/config/db.sqlite3
+2023-01-04 13:48:14.582 INFO   : zwave-adapter: Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/schema.json because it has no messageType
+2023-01-04 13:48:17.914 INFO   : thing-url-adapter: Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/messages/definitions.json because it has no messageType
+2023-01-04 13:48:18.356 INFO   : zigbee-adapter: Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/messages/definitions.json because it has no messageType
+2023-01-04 13:48:19.161 INFO   : zwave-adapter: Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/messages/definitions.json because it has no messageType
+2023-01-04 13:48:26.388 INFO   : thing-url-adapter: Loading add-on thing-url-adapter from /home/pi/.webthings/addons/thing-url-adapter
+2023-01-04 13:48:26.408 INFO   : zigbee-adapter: Loading add-on zigbee-adapter from /home/pi/.webthings/addons/zigbee-adapter
+2023-01-04 13:48:26.876 INFO   : zwave-adapter: Loading add-on zwave-adapter from /home/pi/.webthings/addons/zwave-adapter
+2023-01-04 13:48:28.846 INFO   : thing-url-adapter: Starting mDNS discovery
+2023-01-04 13:48:29.032 INFO   : zigbee-adapter: DEBUG config = ''
+2023-01-04 13:48:29.089 INFO   : zigbee-adapter: Probing serial ports
+2023-01-04 13:48:29.093 INFO   : zwave-adapter: DEBUG config = ''
+2023-01-04 13:48:29.143 INFO   : zwave-adapter: Closing database
+2023-01-04 13:48:29.403 INFO   : zigbee-adapter: Serial ports that were found:
+2023-01-04 13:48:29.577 ERROR  : zwave-adapter: Failed to start add-on zwave-adapter: Unable to find ZWave adapter
+2023-01-04 13:48:29.646 INFO   : zigbee-adapter: Serial Device found @ /dev/ttyAMA0
+2023-01-04 13:48:29.650 INFO   : zigbee-adapter: Serial Device found @ /dev/ttyS0
+2023-01-04 13:48:29.653 ERROR  : zigbee-adapter: Failed to start add-on zigbee-adapter: No Zigbee dongle found

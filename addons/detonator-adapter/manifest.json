@@ -1,0 +1,23 @@
+{
+  "id": "detonator-adapter",
+  "name": "Detonator Adapter",
+  "description": "An adapter for displaying a joke detonator message on an I2C LCD screen using WebThing",
+  "version": "1.0.0",
+  "author": "Your Name",
+  "main": "main.js",
+  "license": "MIT",
+  "manifest_version": 1,
+  "dependencies": {
+    "lcdi2c": "^1.0.6",
+    "webthing": "^0.15.0"
+  },
+  "type": "adapter",
+  "gateway_specific_settings": {
+    "webthings": {
+      "primary_type": "text-display",
+      "exec": "node /home/pi/.webthings/addons/detonator-adapter/main.js"
+    }
+  },
+  "homepage_url": "https://github.com/NasTheRobotKing/WebthingsIoThermoDesignAddons",
+  "keywords": ["webthings", "lcd", "detonator", "i2c"]
+}

@@ -1,0 +1,828 @@
+2025-03-04 00:00:14.688 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:00:14.696 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:00:14.698 ERROR  : lcd-adapter:     ^
+2025-03-04 00:00:14.701 ERROR  : lcd-adapter: 
+2025-03-04 00:00:14.703 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:00:14.706 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:00:14.708 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:00:14.710 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:00:14.713 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:00:14.715 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:00:14.718 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:00:14.720 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:00:14.722 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:00:14.724 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:00:14.725 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:00:14.730 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:00:14.732 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:00:14.733 ERROR  : thermo-reader:     ^
+2025-03-04 00:00:14.734 ERROR  : thermo-reader: 
+2025-03-04 00:00:14.736 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:00:14.737 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:00:14.738 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:00:14.740 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:00:14.741 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:00:14.742 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:00:14.744 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:00:14.745 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:00:14.747 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:00:14.748 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:00:14.749 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:00:14.752 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 17000
+2025-03-04 00:00:14.754 INFO   : Plugin: thermo-reader died, code = 1 restarting after 17000
+2025-03-04 00:00:32.121 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:00:32.128 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:00:32.130 ERROR  : lcd-adapter:     ^
+2025-03-04 00:00:32.132 ERROR  : lcd-adapter: 
+2025-03-04 00:00:32.133 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:00:32.135 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:00:32.137 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:00:32.139 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:00:32.141 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:00:32.143 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:00:32.144 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:00:32.146 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:00:32.148 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:00:32.150 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:00:32.152 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:00:32.156 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 18000
+2025-03-04 00:00:32.162 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:00:32.163 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:00:32.165 ERROR  : thermo-reader:     ^
+2025-03-04 00:00:32.167 ERROR  : thermo-reader: 
+2025-03-04 00:00:32.168 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:00:32.170 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:00:32.171 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:00:32.173 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:00:32.174 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:00:32.175 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:00:32.179 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:00:32.181 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:00:32.182 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:00:32.184 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:00:32.185 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:00:32.188 INFO   : Plugin: thermo-reader died, code = 1 restarting after 18000
+2025-03-04 00:00:50.572 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:00:50.577 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:00:50.580 ERROR  : lcd-adapter:     ^
+2025-03-04 00:00:50.581 ERROR  : lcd-adapter: 
+2025-03-04 00:00:50.584 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:00:50.586 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:00:50.588 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:00:50.591 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:00:50.593 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:00:50.595 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:00:50.597 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:00:50.598 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:00:50.601 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:00:50.603 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:00:50.605 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:00:50.610 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:00:50.613 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:00:50.615 ERROR  : thermo-reader:     ^
+2025-03-04 00:00:50.616 ERROR  : thermo-reader: 
+2025-03-04 00:00:50.617 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:00:50.619 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:00:50.620 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:00:50.621 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:00:50.623 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:00:50.625 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:00:50.627 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:00:50.628 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:00:50.630 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:00:50.631 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:00:50.632 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:00:50.635 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 19000
+2025-03-04 00:00:50.637 INFO   : Plugin: thermo-reader died, code = 1 restarting after 19000
+2025-03-04 00:01:16.488 INFO   : Opening database: /home/pi/.webthings/log/logs.sqlite3
+2025-03-04 00:01:17.040 INFO   : wifi-setup: waitForWiFi: networks exist: [ 'SlaveFib' ]
+2025-03-04 00:01:17.144 INFO   : wifi-setup: waitForWifi: connection found
+2025-03-04 00:01:17.340 INFO   : HTTPS server listening on port 4443
+2025-03-04 00:01:17.343 INFO   : Redirector listening on port 8080
+2025-03-04 00:01:17.371 DEBUG  : Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/schema.json because it has no messageType
+2025-03-04 00:01:19.817 DEBUG  : Ignoring https://raw.githubusercontent.com/WebThingsIO/gateway-addon-ipc-schema/master/messages/definitions.json because it has no messageType
+2025-03-04 00:01:24.282 ERROR  : Failed to load add-on .git: Error: No manifest found for add-on .git
+    at Object.loadManifest (/home/pi/webthings/gateway/build/addon-utils.js:284:11)
+    at AddonManager.loadAddon (/home/pi/webthings/gateway/build/addon-manager.js:547:44)
+    at fs_1.default.readdir (/home/pi/webthings/gateway/build/addon-manager.js:635:22)
+    at FSReqWrap.args [as oncomplete] (fs.js:140:20)
+2025-03-04 00:01:24.284 ERROR  : Failed to load add-on thing-url-adapter: Error: Failed to read SHA256SUMS for add-on thing-url-adapter: Error: File /home/pi/.webthings/addons/thing-url-adapter/node_modules/ws/README.md missing for add-on thing-url-adapter
+    at loadManifestJson (/home/pi/webthings/gateway/build/addon-utils.js:192:23)
+    at Object.loadManifest (/home/pi/webthings/gateway/build/addon-utils.js:282:16)
+    at AddonManager.loadAddon (/home/pi/webthings/gateway/build/addon-manager.js:547:44)
+    at fs_1.default.readdir (/home/pi/webthings/gateway/build/addon-manager.js:635:22)
+    at FSReqWrap.args [as oncomplete] (fs.js:140:20)
+2025-03-04 00:01:24.348 ERROR  : Failed to load add-on detonator-adapter: Error: Add-on not enabled: detonator-adapter
+    at AddonManager.loadAddon (/home/pi/webthings/gateway/build/addon-manager.js:581:19)
+2025-03-04 00:01:24.351 INFO   : Loading add-on: lcd-adapter
+2025-03-04 00:01:24.357 INFO   : Loading add-on: thermo-reader
+2025-03-04 00:01:24.770 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:01:24.773 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:01:24.775 ERROR  : lcd-adapter:     ^
+2025-03-04 00:01:24.777 ERROR  : lcd-adapter: 
+2025-03-04 00:01:24.780 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:01:24.782 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:01:24.784 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:01:24.786 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:01:24.787 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:01:24.789 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:01:24.791 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:01:24.793 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:01:24.795 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:01:24.797 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:01:24.799 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:01:24.811 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 0
+2025-03-04 00:01:24.819 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:01:24.821 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:01:24.823 ERROR  : thermo-reader:     ^
+2025-03-04 00:01:24.825 ERROR  : thermo-reader: 
+2025-03-04 00:01:24.827 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:01:24.828 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:01:24.830 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:01:24.831 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:01:24.833 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:01:24.835 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:01:24.836 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:01:24.838 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:01:24.839 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:01:24.840 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:01:24.842 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:01:24.881 INFO   : Plugin: thermo-reader died, code = 1 restarting after 0
+2025-03-04 00:01:25.248 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:01:25.250 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:01:25.251 ERROR  : lcd-adapter:     ^
+2025-03-04 00:01:25.253 ERROR  : lcd-adapter: 
+2025-03-04 00:01:25.254 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:01:25.256 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:01:25.257 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:01:25.258 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:01:25.260 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:01:25.261 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:01:25.262 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:01:25.264 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:01:25.265 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:01:25.266 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:01:25.268 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:01:25.272 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 1000
+2025-03-04 00:01:25.318 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:01:25.320 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:01:25.321 ERROR  : thermo-reader:     ^
+2025-03-04 00:01:25.323 ERROR  : thermo-reader: 
+2025-03-04 00:01:25.324 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:01:25.325 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:01:25.326 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:01:25.328 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:01:25.329 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:01:25.330 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:01:25.332 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:01:25.333 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:01:25.334 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:01:25.335 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:01:25.337 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:01:25.340 INFO   : Plugin: thermo-reader died, code = 1 restarting after 1000
+2025-03-04 00:01:26.492 INFO   : PageKite connected!
+2025-03-04 00:01:26.500 INFO   : Starting certificate renewal.
+2025-03-04 00:01:26.542 INFO   : Certificate not yet due for renewal.
+2025-03-04 00:01:26.661 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:01:26.664 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:01:26.666 ERROR  : lcd-adapter:     ^
+2025-03-04 00:01:26.668 ERROR  : lcd-adapter: 
+2025-03-04 00:01:26.669 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:01:26.671 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:01:26.673 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:01:26.674 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:01:26.676 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:01:26.678 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:01:26.679 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:01:26.681 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:01:26.683 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:01:26.684 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:01:26.686 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:01:26.692 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 2000
+2025-03-04 00:01:26.712 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:01:26.714 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:01:26.715 ERROR  : thermo-reader:     ^
+2025-03-04 00:01:26.717 ERROR  : thermo-reader: 
+2025-03-04 00:01:26.718 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:01:26.719 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:01:26.721 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:01:26.722 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:01:26.723 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:01:26.724 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:01:26.726 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:01:26.727 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:01:26.728 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:01:26.729 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:01:26.730 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:01:26.734 INFO   : Plugin: thermo-reader died, code = 1 restarting after 2000
+2025-03-04 00:01:29.050 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:01:29.053 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:01:29.055 ERROR  : lcd-adapter:     ^
+2025-03-04 00:01:29.057 ERROR  : lcd-adapter: 
+2025-03-04 00:01:29.058 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:01:29.059 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:01:29.061 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:01:29.063 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:01:29.064 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:01:29.066 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:01:29.068 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:01:29.069 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:01:29.071 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:01:29.073 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:01:29.074 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:01:29.079 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 3000
+2025-03-04 00:01:29.103 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:01:29.105 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:01:29.107 ERROR  : thermo-reader:     ^
+2025-03-04 00:01:29.108 ERROR  : thermo-reader: 
+2025-03-04 00:01:29.110 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:01:29.111 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:01:29.112 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:01:29.113 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:01:29.115 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:01:29.116 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:01:29.117 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:01:29.118 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:01:29.119 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:01:29.121 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:01:29.122 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:01:29.125 INFO   : Plugin: thermo-reader died, code = 1 restarting after 3000
+2025-03-04 00:01:32.443 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:01:32.445 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:01:32.447 ERROR  : lcd-adapter:     ^
+2025-03-04 00:01:32.448 ERROR  : lcd-adapter: 
+2025-03-04 00:01:32.450 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:01:32.452 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:01:32.453 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:01:32.455 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:01:32.457 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:01:32.458 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:01:32.460 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:01:32.461 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:01:32.463 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:01:32.464 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:01:32.466 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:01:32.470 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 4000
+2025-03-04 00:01:32.510 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:01:32.512 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:01:32.514 ERROR  : thermo-reader:     ^
+2025-03-04 00:01:32.515 ERROR  : thermo-reader: 
+2025-03-04 00:01:32.517 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:01:32.518 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:01:32.519 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:01:32.520 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:01:32.521 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:01:32.523 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:01:32.524 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:01:32.525 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:01:32.526 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:01:32.527 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:01:32.529 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:01:32.532 INFO   : Plugin: thermo-reader died, code = 1 restarting after 4000
+2025-03-04 00:01:34.359 INFO   : Checking for add-on updates...
+2025-03-04 00:01:35.242 INFO   : Finished updating add-ons
+2025-03-04 00:01:36.823 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:01:36.825 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:01:36.826 ERROR  : lcd-adapter:     ^
+2025-03-04 00:01:36.828 ERROR  : lcd-adapter: 
+2025-03-04 00:01:36.830 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:01:36.831 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:01:36.838 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:01:36.839 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:01:36.841 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:01:36.843 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:01:36.844 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:01:36.846 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:01:36.847 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:01:36.849 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:01:36.850 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:01:36.855 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 5000
+2025-03-04 00:01:36.889 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:01:36.890 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:01:36.891 ERROR  : thermo-reader:     ^
+2025-03-04 00:01:36.893 ERROR  : thermo-reader: 
+2025-03-04 00:01:36.894 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:01:36.896 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:01:36.897 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:01:36.898 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:01:36.899 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:01:36.900 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:01:36.902 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:01:36.903 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:01:36.904 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:01:36.906 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:01:36.915 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:01:36.920 INFO   : Plugin: thermo-reader died, code = 1 restarting after 5000
+2025-03-04 00:01:42.221 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:01:42.224 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:01:42.226 ERROR  : lcd-adapter:     ^
+2025-03-04 00:01:42.228 ERROR  : lcd-adapter: 
+2025-03-04 00:01:42.229 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:01:42.231 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:01:42.242 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:01:42.244 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:01:42.245 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:01:42.247 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:01:42.248 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:01:42.250 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:01:42.251 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:01:42.258 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:01:42.260 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:01:42.268 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 6000
+2025-03-04 00:01:42.303 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:01:42.305 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:01:42.307 ERROR  : thermo-reader:     ^
+2025-03-04 00:01:42.308 ERROR  : thermo-reader: 
+2025-03-04 00:01:42.309 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:01:42.311 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:01:42.312 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:01:42.313 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:01:42.314 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:01:42.316 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:01:42.317 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:01:42.318 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:01:42.319 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:01:42.320 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:01:42.321 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:01:42.325 INFO   : Plugin: thermo-reader died, code = 1 restarting after 6000
+2025-03-04 00:01:48.623 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:01:48.625 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:01:48.628 ERROR  : lcd-adapter:     ^
+2025-03-04 00:01:48.629 ERROR  : lcd-adapter: 
+2025-03-04 00:01:48.631 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:01:48.632 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:01:48.634 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:01:48.635 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:01:48.637 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:01:48.638 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:01:48.640 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:01:48.641 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:01:48.643 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:01:48.644 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:01:48.646 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:01:48.650 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 7000
+2025-03-04 00:01:48.688 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:01:48.689 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:01:48.691 ERROR  : thermo-reader:     ^
+2025-03-04 00:01:48.692 ERROR  : thermo-reader: 
+2025-03-04 00:01:48.694 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:01:48.695 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:01:48.696 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:01:48.697 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:01:48.698 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:01:48.699 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:01:48.700 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:01:48.701 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:01:48.703 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:01:48.704 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:01:48.705 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:01:48.708 INFO   : Plugin: thermo-reader died, code = 1 restarting after 7000
+2025-03-04 00:01:56.008 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:01:56.010 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:01:56.012 ERROR  : lcd-adapter:     ^
+2025-03-04 00:01:56.013 ERROR  : lcd-adapter: 
+2025-03-04 00:01:56.015 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:01:56.016 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:01:56.018 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:01:56.019 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:01:56.021 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:01:56.027 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:01:56.029 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:01:56.030 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:01:56.032 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:01:56.033 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:01:56.035 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:01:56.038 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 8000
+2025-03-04 00:01:56.076 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:01:56.078 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:01:56.079 ERROR  : thermo-reader:     ^
+2025-03-04 00:01:56.081 ERROR  : thermo-reader: 
+2025-03-04 00:01:56.082 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:01:56.083 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:01:56.084 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:01:56.085 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:01:56.086 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:01:56.087 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:01:56.089 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:01:56.090 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:01:56.091 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:01:56.092 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:01:56.093 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:01:56.096 INFO   : Plugin: thermo-reader died, code = 1 restarting after 8000
+2025-03-04 00:02:04.404 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:02:04.406 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:02:04.407 ERROR  : lcd-adapter:     ^
+2025-03-04 00:02:04.409 ERROR  : lcd-adapter: 
+2025-03-04 00:02:04.410 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:02:04.412 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:02:04.418 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:02:04.420 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:02:04.421 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:02:04.423 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:02:04.424 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:02:04.425 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:02:04.427 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:02:04.428 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:02:04.430 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:02:04.434 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 9000
+2025-03-04 00:02:04.468 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:02:04.469 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:02:04.471 ERROR  : thermo-reader:     ^
+2025-03-04 00:02:04.472 ERROR  : thermo-reader: 
+2025-03-04 00:02:04.474 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:02:04.475 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:02:04.476 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:02:04.477 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:02:04.478 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:02:04.479 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:02:04.480 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:02:04.481 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:02:04.483 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:02:04.484 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:02:04.485 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:02:04.488 INFO   : Plugin: thermo-reader died, code = 1 restarting after 9000
+2025-03-04 00:02:13.786 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:02:13.787 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:02:13.794 ERROR  : lcd-adapter:     ^
+2025-03-04 00:02:13.795 ERROR  : lcd-adapter: 
+2025-03-04 00:02:13.797 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:02:13.798 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:02:13.800 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:02:13.801 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:02:13.803 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:02:13.804 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:02:13.806 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:02:13.807 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:02:13.809 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:02:13.810 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:02:13.811 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:02:13.816 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 10000
+2025-03-04 00:02:13.855 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:02:13.857 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:02:13.858 ERROR  : thermo-reader:     ^
+2025-03-04 00:02:13.860 ERROR  : thermo-reader: 
+2025-03-04 00:02:13.861 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:02:13.862 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:02:13.863 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:02:13.864 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:02:13.866 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:02:13.867 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:02:13.868 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:02:13.870 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:02:13.871 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:02:13.872 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:02:13.873 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:02:13.877 INFO   : Plugin: thermo-reader died, code = 1 restarting after 10000
+2025-03-04 00:02:24.178 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:02:24.179 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:02:24.181 ERROR  : lcd-adapter:     ^
+2025-03-04 00:02:24.182 ERROR  : lcd-adapter: 
+2025-03-04 00:02:24.183 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:02:24.185 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:02:24.186 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:02:24.187 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:02:24.189 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:02:24.190 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:02:24.192 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:02:24.199 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:02:24.201 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:02:24.202 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:02:24.204 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:02:24.216 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 11000
+2025-03-04 00:02:24.269 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:02:24.271 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:02:24.272 ERROR  : thermo-reader:     ^
+2025-03-04 00:02:24.274 ERROR  : thermo-reader: 
+2025-03-04 00:02:24.275 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:02:24.276 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:02:24.277 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:02:24.278 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:02:24.279 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:02:24.281 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:02:24.282 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:02:24.283 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:02:24.284 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:02:24.285 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:02:24.287 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:02:24.291 INFO   : Plugin: thermo-reader died, code = 1 restarting after 11000
+2025-03-04 00:02:35.576 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:02:35.578 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:02:35.580 ERROR  : lcd-adapter:     ^
+2025-03-04 00:02:35.582 ERROR  : lcd-adapter: 
+2025-03-04 00:02:35.583 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:02:35.585 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:02:35.586 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:02:35.588 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:02:35.589 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:02:35.591 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:02:35.593 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:02:35.594 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:02:35.596 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:02:35.597 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:02:35.599 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:02:35.603 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 12000
+2025-03-04 00:02:35.640 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:02:35.642 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:02:35.643 ERROR  : thermo-reader:     ^
+2025-03-04 00:02:35.645 ERROR  : thermo-reader: 
+2025-03-04 00:02:35.651 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:02:35.652 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:02:35.653 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:02:35.655 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:02:35.656 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:02:35.658 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:02:35.659 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:02:35.660 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:02:35.662 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:02:35.663 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:02:35.665 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:02:35.668 INFO   : Plugin: thermo-reader died, code = 1 restarting after 12000
+2025-03-04 00:02:47.957 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:02:47.959 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:02:47.961 ERROR  : lcd-adapter:     ^
+2025-03-04 00:02:47.963 ERROR  : lcd-adapter: 
+2025-03-04 00:02:47.964 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:02:47.966 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:02:47.967 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:02:47.969 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:02:47.971 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:02:47.972 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:02:47.974 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:02:47.975 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:02:47.977 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:02:47.978 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:02:47.980 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:02:47.984 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 13000
+2025-03-04 00:02:48.035 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:02:48.037 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:02:48.038 ERROR  : thermo-reader:     ^
+2025-03-04 00:02:48.040 ERROR  : thermo-reader: 
+2025-03-04 00:02:48.041 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:02:48.042 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:02:48.043 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:02:48.044 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:02:48.046 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:02:48.047 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:02:48.048 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:02:48.049 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:02:48.050 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:02:48.051 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:02:48.052 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:02:48.055 INFO   : Plugin: thermo-reader died, code = 1 restarting after 13000
+2025-03-04 00:03:01.346 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:03:01.349 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:03:01.351 ERROR  : lcd-adapter:     ^
+2025-03-04 00:03:01.353 ERROR  : lcd-adapter: 
+2025-03-04 00:03:01.354 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:03:01.356 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:03:01.358 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:03:01.359 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:03:01.361 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:03:01.362 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:03:01.364 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:03:01.366 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:03:01.367 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:03:01.368 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:03:01.370 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:03:01.375 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 14000
+2025-03-04 00:03:01.408 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:03:01.409 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:03:01.410 ERROR  : thermo-reader:     ^
+2025-03-04 00:03:01.411 ERROR  : thermo-reader: 
+2025-03-04 00:03:01.413 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:03:01.414 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:03:01.415 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:03:01.417 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:03:01.418 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:03:01.419 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:03:01.421 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:03:01.422 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:03:01.423 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:03:01.425 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:03:01.426 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:03:01.434 INFO   : Plugin: thermo-reader died, code = 1 restarting after 14000
+2025-03-04 00:03:15.728 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:03:15.730 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:03:15.731 ERROR  : lcd-adapter:     ^
+2025-03-04 00:03:15.733 ERROR  : lcd-adapter: 
+2025-03-04 00:03:15.734 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:03:15.735 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:03:15.737 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:03:15.738 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:03:15.739 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:03:15.741 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:03:15.742 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:03:15.749 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:03:15.750 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:03:15.751 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:03:15.753 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:03:15.762 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 15000
+2025-03-04 00:03:15.801 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:03:15.803 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:03:15.804 ERROR  : thermo-reader:     ^
+2025-03-04 00:03:15.806 ERROR  : thermo-reader: 
+2025-03-04 00:03:15.807 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:03:15.809 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:03:15.810 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:03:15.811 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:03:15.812 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:03:15.813 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:03:15.815 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:03:15.816 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:03:15.817 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:03:15.818 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:03:15.820 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:03:15.823 INFO   : Plugin: thermo-reader died, code = 1 restarting after 15000
+2025-03-04 00:03:31.123 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:03:31.133 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:03:31.134 ERROR  : lcd-adapter:     ^
+2025-03-04 00:03:31.136 ERROR  : lcd-adapter: 
+2025-03-04 00:03:31.137 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:03:31.138 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:03:31.140 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:03:31.141 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:03:31.143 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:03:31.144 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:03:31.145 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:03:31.147 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:03:31.148 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:03:31.157 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:03:31.159 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:03:31.163 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 16000
+2025-03-04 00:03:31.197 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:03:31.199 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:03:31.201 ERROR  : thermo-reader:     ^
+2025-03-04 00:03:31.202 ERROR  : thermo-reader: 
+2025-03-04 00:03:31.204 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:03:31.205 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:03:31.206 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:03:31.208 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:03:31.209 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:03:31.210 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:03:31.212 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:03:31.213 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:03:31.215 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:03:31.216 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:03:31.218 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:03:31.221 INFO   : Plugin: thermo-reader died, code = 1 restarting after 16000
+2025-03-04 00:03:47.524 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:03:47.526 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:03:47.527 ERROR  : lcd-adapter:     ^
+2025-03-04 00:03:47.529 ERROR  : lcd-adapter: 
+2025-03-04 00:03:47.530 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:03:47.532 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:03:47.538 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:03:47.540 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:03:47.541 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:03:47.543 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:03:47.545 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:03:47.546 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:03:47.548 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:03:47.549 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:03:47.551 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:03:47.555 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 17000
+2025-03-04 00:03:47.578 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:03:47.579 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:03:47.580 ERROR  : thermo-reader:     ^
+2025-03-04 00:03:47.581 ERROR  : thermo-reader: 
+2025-03-04 00:03:47.582 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:03:47.584 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:03:47.585 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:03:47.586 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:03:47.588 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:03:47.589 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:03:47.590 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:03:47.591 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:03:47.592 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:03:47.593 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:03:47.595 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:03:47.597 INFO   : Plugin: thermo-reader died, code = 1 restarting after 17000
+2025-03-04 00:04:04.920 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:04:04.922 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:04:04.924 ERROR  : lcd-adapter:     ^
+2025-03-04 00:04:04.926 ERROR  : lcd-adapter: 
+2025-03-04 00:04:04.927 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:04:04.929 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:04:04.930 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:04:04.932 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:04:04.934 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:04:04.935 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:04:04.937 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:04:04.938 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:04:04.940 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:04:04.941 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:04:04.943 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:04:04.947 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 18000
+2025-03-04 00:04:04.963 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:04:04.964 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:04:04.965 ERROR  : thermo-reader:     ^
+2025-03-04 00:04:04.966 ERROR  : thermo-reader: 
+2025-03-04 00:04:04.967 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:04:04.971 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:04:04.973 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:04:04.974 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:04:04.975 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:04:04.976 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:04:04.977 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:04:04.978 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:04:04.980 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:04:04.981 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:04:04.982 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:04:04.985 INFO   : Plugin: thermo-reader died, code = 1 restarting after 18000
+2025-03-04 00:04:23.330 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:04:23.333 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:04:23.336 ERROR  : lcd-adapter:     ^
+2025-03-04 00:04:23.338 ERROR  : lcd-adapter: 
+2025-03-04 00:04:23.340 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:04:23.343 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:04:23.345 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:04:23.347 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:04:23.350 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:04:23.353 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:04:23.354 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:04:23.356 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:04:23.357 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:04:23.359 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:04:23.360 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:04:23.363 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:04:23.364 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:04:23.366 ERROR  : thermo-reader:     ^
+2025-03-04 00:04:23.367 ERROR  : thermo-reader: 
+2025-03-04 00:04:23.368 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:04:23.369 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:04:23.371 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:04:23.372 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:04:23.373 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:04:23.374 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:04:23.376 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:04:23.377 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:04:23.378 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:04:23.379 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:04:23.381 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:04:23.383 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 19000
+2025-03-04 00:04:23.385 INFO   : Plugin: thermo-reader died, code = 1 restarting after 19000
+2025-03-04 00:04:42.744 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:04:42.746 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:04:42.748 ERROR  : lcd-adapter:     ^
+2025-03-04 00:04:42.749 ERROR  : lcd-adapter: 
+2025-03-04 00:04:42.751 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:04:42.758 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:04:42.760 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:04:42.762 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:04:42.763 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:04:42.765 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:04:42.767 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:04:42.769 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:04:42.770 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:04:42.772 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:04:42.774 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:04:42.781 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 20000
+2025-03-04 00:04:42.784 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:04:42.787 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:04:42.789 ERROR  : thermo-reader:     ^
+2025-03-04 00:04:42.795 ERROR  : thermo-reader: 
+2025-03-04 00:04:42.796 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:04:42.798 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:04:42.799 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:04:42.801 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:04:42.803 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:04:42.804 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:04:42.806 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:04:42.807 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:04:42.809 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:04:42.810 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:04:42.811 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:04:42.814 INFO   : Plugin: thermo-reader died, code = 1 restarting after 20000
+2025-03-04 00:05:03.144 ERROR  : lcd-adapter: internal/modules/cjs/loader.js:638
+2025-03-04 00:05:03.146 ERROR  : lcd-adapter:     throw err;
+2025-03-04 00:05:03.147 ERROR  : lcd-adapter:     ^
+2025-03-04 00:05:03.157 ERROR  : lcd-adapter: 
+2025-03-04 00:05:03.159 ERROR  : lcd-adapter: Error: Cannot find module 'webthing'
+2025-03-04 00:05:03.161 ERROR  : lcd-adapter:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:05:03.162 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:05:03.164 ERROR  : lcd-adapter:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:05:03.166 ERROR  : lcd-adapter:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:05:03.167 ERROR  : lcd-adapter:     at Object.<anonymous> (/home/pi/.webthings/addons/lcd-adapter/main.js:8:5)
+2025-03-04 00:05:03.169 ERROR  : lcd-adapter:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:05:03.171 ERROR  : lcd-adapter:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:05:03.172 ERROR  : lcd-adapter:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:05:03.174 ERROR  : lcd-adapter:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:05:03.176 ERROR  : lcd-adapter:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:05:03.179 INFO   : Plugin: lcd-adapter died, code = 1 restarting after 21000
+2025-03-04 00:05:03.182 ERROR  : thermo-reader: internal/modules/cjs/loader.js:638
+2025-03-04 00:05:03.184 ERROR  : thermo-reader:     throw err;
+2025-03-04 00:05:03.185 ERROR  : thermo-reader:     ^
+2025-03-04 00:05:03.187 ERROR  : thermo-reader: 
+2025-03-04 00:05:03.189 ERROR  : thermo-reader: Error: Cannot find module 'webthing'
+2025-03-04 00:05:03.190 ERROR  : thermo-reader:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+2025-03-04 00:05:03.191 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+2025-03-04 00:05:03.192 ERROR  : thermo-reader:     at Module.require (internal/modules/cjs/loader.js:692:17)
+2025-03-04 00:05:03.194 ERROR  : thermo-reader:     at require (internal/modules/cjs/helpers.js:25:18)
+2025-03-04 00:05:03.195 ERROR  : thermo-reader:     at Object.<anonymous> (/home/pi/.webthings/addons/thermo-reader/main.js:2:65)
+2025-03-04 00:05:03.196 ERROR  : thermo-reader:     at Module._compile (internal/modules/cjs/loader.js:778:30)
+2025-03-04 00:05:03.197 ERROR  : thermo-reader:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2025-03-04 00:05:03.198 ERROR  : thermo-reader:     at Module.load (internal/modules/cjs/loader.js:653:32)
+2025-03-04 00:05:03.200 ERROR  : thermo-reader:     at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2025-03-04 00:05:03.201 ERROR  : thermo-reader:     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2025-03-04 00:05:03.204 INFO   : Plugin: thermo-reader died, code = 1 restarting after 21000
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      

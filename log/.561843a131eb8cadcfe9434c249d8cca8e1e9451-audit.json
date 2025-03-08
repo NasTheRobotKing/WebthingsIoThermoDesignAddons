@@ -1,0 +1,45 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 10
+    },
+    "auditLog": "/home/pi/.webthings/log/.561843a131eb8cadcfe9434c249d8cca8e1e9451-audit.json",
+    "files": [
+        {
+            "date": 1672839245662,
+            "name": "/home/pi/.webthings/log/run-app.log.2023-01-04",
+            "hash": "454b48e3eba42ce1776405770613fcff6dbebf7f87819292e65a4e12fc1fa998"
+        },
+        {
+            "date": 1740617743412,
+            "name": "/home/pi/.webthings/log/run-app.log.2025-02-27",
+            "hash": "4433ae7b100bcdd52cf068b905dcf55e48f5f58bfe4bf5f519c2e5bcdf542298"
+        },
+        {
+            "date": 1740942475180,
+            "name": "/home/pi/.webthings/log/run-app.log.2025-03-02",
+            "hash": "d2f0bd0c80137f54079a7bf26badb73097298c7b1587f03c6fade256170893e8"
+        },
+        {
+            "date": 1740960023408,
+            "name": "/home/pi/.webthings/log/run-app.log.2025-03-03",
+            "hash": "bae959a834c5597c49db0610dfdbea1714519c6ba63a9cfc3c48af15f8bd509e"
+        },
+        {
+            "date": 1741046414690,
+            "name": "/home/pi/.webthings/log/run-app.log.2025-03-04",
+            "hash": "29132a9083002c9bdd27db043632068c9aec0cba9a9f4fa835fc464a4e227281"
+        },
+        {
+            "date": 1741389811200,
+            "name": "/home/pi/.webthings/log/run-app.log.2025-03-07",
+            "hash": "b279c73c2cba6089cbdbd6469aea1172641633b184ea3880b27e0a53589441e3"
+        },
+        {
+            "date": 1741392002106,
+            "name": "/home/pi/.webthings/log/run-app.log.2025-03-08",
+            "hash": "10e7595b541c05972942340753968a92bee0d624d68bdd7ed9fa9ae7f43da2f5"
+        }
+    ],
+    "hashType": "sha256"
+}
