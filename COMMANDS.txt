@@ -11,3 +11,43 @@ To add anew addon using the URL: http://192.168.3.99:<unused port number>
 *To SSH: Need to enable SSH on device, see interface options in command menu: sudo raspi-config. And you need to clear the following file info on Windows: "C:\Users\nfarhat\.ssh\known_hosts"
 
 *To connect to a Pi with the gateway io, once you have flashed the image of the Gateway, the Pi will create a hotspot on the wifi netweork called "Gateway xxxxx" You need to connect to this one and follow instructions. You can then make sure to. If you don't know the IP of the gateway, you can connect to it using the following: http://gateway.local or http://<PI's IP>. But make sure to be on the same network as the gateway in order to obtain the gateway interface.
+
+*thermo-reader: DS18B20 sensor is set to GPIO4, here is the configuration:
+You need to reconfigure your Raspberry Pi to work with the DS18B20 temperature sensor. Here's how to set it up:
+
+1. First, enable the One-Wire interface by editing the config file:
+sudo nano /boot/config.txt
+
+2. Add the following line at the end of the file if it's not already there:
+dtoverlay=w1-gpio
+
+If you're using a specific GPIO pin (other than the default GPIO4), you can specify it like this:
+dtoverlay=w1-gpio,gpiopin=X
+(Replace X with your GPIO pin number)
+
+3. Save and exit (Ctrl+X, then Y, then Enter)
+
+4. Reboot your Raspberry Pi:
+sudo reboot
+
+5. After rebooting, load the required kernel modules:
+sudo modprobe w1-gpio
+sudo modprobe w1-therm
+
+6. To make these modules load automatically at boot, add them to /etc/modules:
+sudo nano /etc/modules
+
+7. Add these lines if they're not already there:
+w1-gpio
+w1-therm
+
+8. Save and exit (Ctrl+X, then Y, then Enter)
+
+9. Now check if your sensor is detected:
+ls /sys/bus/w1/devices/
+>You should see a directory starting with "28-" followed by the sensor's serial number. If you see this, your sensor is properly configured.
+
+10. You can check the temperature reading directly:
+cat /sys/bus/w1/devices/28-*/w1_slave
+
+After completing these steps, restart your WebThings gateway and the thermo-reader addon should be able to find the DS18B20 sensor path.
