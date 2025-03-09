@@ -307,35 +307,33 @@ class TemperatureSensor extends Thing {
 
   async readDistance() {
     return new Promise((resolve, reject) => {
-      TRIG.writeSync(0); // Ensure trigger is off
+      TRIG.writeSync(0);  // Ensure trigger is low
       setTimeout(() => {
-        TRIG.writeSync(1); // Send a 10µs pulse
+        TRIG.writeSync(1);  // Send trigger pulse
         setTimeout(() => {
-          TRIG.writeSync(0); // Turn off the trigger
-
-          let start = null;
-          let end = null;
-
-          const timeout = setTimeout(() => {
+          TRIG.writeSync(0);  // End trigger pulse
+          let startTime, endTime;
+          let timeout = setTimeout(() => {
+            ECHO.unwatchAll();  // Stop watching if timeout occurs
             reject(new Error("Distance reading timed out"));
-          }, 1000);
-
-          const interval = setInterval(() => {
-            const echoValue = ECHO.readSync(); // Read echo pin state
-
-            if (echoValue === 1 && start === null) {
-              start = process.hrtime.bigint(); // Record start time
-            } else if (echoValue === 0 && start !== null) {
-              end = process.hrtime.bigint(); // Record end time
-              clearInterval(interval);
+          }, 1000);  // 1-second timeout
+          ECHO.watch((err, value) => {
+            if (err) {
               clearTimeout(timeout);
-
-              const duration = Number(end - start) / 1e3; // Convert nanoseconds to microseconds
-              const distance = duration / 58.2; // Calculate distance in cm
-              resolve(distance > 300 ? "∞" : parseFloat(distance.toFixed(1)).toString()); // Return distance as string
+              reject(err);
             }
-          }, 1);
-        }, 10);
+            if (value === 1) {
+              startTime = process.hrtime.bigint();  // Capture start time
+            } else if (value === 0 && startTime) {
+              endTime = process.hrtime.bigint();  // Capture end time
+              clearTimeout(timeout);
+              ECHO.unwatchAll();  // Stop listening
+              let duration = Number(endTime - startTime) / 1000; // Convert nanoseconds to µs
+              let distance = duration / 58.2;  // Convert µs to cm
+              resolve(distance > 300 ? "∞" : parseFloat(distance.toFixed(1)).toString());
+            }
+          });
+        }, 10);  // Short delay before stopping the trigger
       }, 2);
     });
   }
