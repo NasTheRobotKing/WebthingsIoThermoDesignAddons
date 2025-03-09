@@ -1,6 +1,10 @@
-This is a webthings.io gateway repository for addons. 
-The current addons are all functional "as is" and can be placed under the "/home/pi/.webthings/addons" path of the Webthing.io gateway running on the Pi. 
-In order to push the addon onto the Things screen of the gateway, you'll need to refer to them by their URL with their specified port numbers, in the following case, port 8888 was used, ex: http://--deviceip--:8888
+This is a webthings.io gateway repository for addons.
+The current addons are all functional "as is" and the depot can ne cloned under the "/home/pi/.webthings/" folder of the webthings io image offered on the Webthing.io gateway that will run on the Pi. 
+In order to push the addon onto the Things screen of the gateway, you'll need 
+
+1. Ensure "Web Things" addon is enabled (this addon will offer you the possibility to enter yout URL on teh tthings screen, addon comes by default with the image gateway, but might need to be updated if the image gateway changes, currentwebthinggateway.io image is 1.1)
+2. You'll then need each addon by their URL with their specified port numbers (each addons: detonator-adapter, lcd-adapter or thermo-reader should be activated one-by-one and not together as this will overlap the server settings). In the case of our code, each addon starts it's own server at port 8888, ex: http://--deviceip--:8888, since I set a static IP to the raspberry PI (@192.168.3.99), my home device addon adddress would be: http://192.168.3.99:8888
+3. Click in scanning in the Things menu will identify the running addon.
 
 For more details see the following documentation: "https://webthings.io/"
 
