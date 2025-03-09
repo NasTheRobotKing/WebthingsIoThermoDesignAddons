@@ -1,5 +1,5 @@
 This is a webthings.io gateway repository for addons.
-The current addons are all functional "as is" and the depot can ne cloned under the "/home/pi/.webthings/" folder of the webthings io image offered on the Webthing.io gateway that will run on the Pi. 
+The current addons are all functional "as is" and the repo can be cloned directly on the "/home/pi/.webthings/" folder of the webthings io image offered on the Webthing.io gateway (version 1.1) that will run on the Pi. 
 In order to push the addon onto the Things screen of the gateway, you'll need 
 
 1. Ensure "Web Things" addon is enabled (this addon will offer you the possibility to enter yout URL on teh tthings screen, addon comes by default with the image gateway, but might need to be updated if the image gateway changes, currentwebthinggateway.io image is 1.1)
