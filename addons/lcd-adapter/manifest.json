@@ -1,9 +1,9 @@
 {
   "id": "lcd-adapter",
   "name": "LCD Adapter",
-  "description": "An adapter for displaying text on an I2C LCD screen using WebThing",
+  "description": "An adapter for displaying text on an I2C LCD screen using WebThing (http://192.168.3.99:8889)",
   "version": "1.0.0",
-  "author": "Your Name",
+  "author": "Yugen Farhat",
   "main": "main.js",
   "license": "MIT",
   "manifest_version": 1,

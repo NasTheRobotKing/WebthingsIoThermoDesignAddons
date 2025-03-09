@@ -2,7 +2,7 @@
   "id": "thermo-reader",
   "name": "Thermo Reader",
   "version": "1.0.0",
-  "description": "A WebThings Gateway add-on for reading temperature from DS18B20.",
+  "description": "A WebThings Gateway add-on for reading temperature from DS18B20 (http://192.168.3.99:8888)",
   "author": "Yugen Farhat",
   "license": "MIT",
   "main": "/home/pi/.webthings/addons/thermo-reader/main.js",
