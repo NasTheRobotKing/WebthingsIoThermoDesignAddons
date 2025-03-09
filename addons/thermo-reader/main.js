@@ -5,8 +5,12 @@ const Gpio = require("onoff").Gpio;
 
 // Constants
 const DS18B20_PATH = "/sys/bus/w1/devices/28-2842d446f1da/w1_slave";
+
+// HC-SR04 sonar sensor pins
 const ECHO_PIN = 5;
 const TRIGGER_PIN = 6;
+
+// Piezo pin
 const PIEZO_PIN = 16;
 
 // Ensure sensor file exists
@@ -78,7 +82,7 @@ class TemperatureSensor extends Thing {
     this.temperatureThreshold = new Value(17);
     this.distanceThreshold = new Value(120);
     this.piezoEnabled = new Value(false); // Default to disabled
-    this.lcdEnabled = new Value(true); // Default to enabled
+    this.lcdDisabled = new Value(false); // Default to enabled
 
     // Add configurable properties with min/max values
     this.addProperty(
@@ -118,11 +122,11 @@ class TemperatureSensor extends Thing {
       })
     );
 
-        // Add lcdEnabled property to always disable the LCD
+        // Add lcdDisabled property to always disable the LCD
     this.addProperty(
-      new Property(this, "lcdEnabled", this.lcdEnabled, {
+      new Property(this, "lcdDisabled", this.lcdDisabled, {
         "@type": "BooleanProperty",
-        title: "LCD Enabled",
+        title: "LCD Always OFF",
         type: "boolean",
         description: "Enable or disable the LCD",
         readOnly: false, // This will prevent changes to this property
@@ -182,7 +186,7 @@ class TemperatureSensor extends Thing {
         const distance = this.distanceValue.get();
         const currentDistanceThreshold = this.distanceThreshold.get();
         // Always disable the LCD regardless of other conditions
-        if (!this.lcdEnabled.get()) {
+        if (this.lcdDisabled.get()) {
           this.lcd.off();
           console.log("LCD is always disabled.");
         } else {
