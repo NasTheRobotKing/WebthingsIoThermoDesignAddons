@@ -253,7 +253,7 @@ class TemperatureSensor extends Thing {
         this.displayWarning(temperature);
       } else {
         this.lcd.clear();
-        this.lcd.blinkOff();
+        this.lcd.blinkOn();
         this.lcd.println(`Temp: ${temperature}C`, 1); // Restore normal display
       }
 
@@ -263,12 +263,15 @@ class TemperatureSensor extends Thing {
   }
 
   displayWarning(temperature) {
+    // Randomly select a name from the list
+    const names = ["Ayumi", "NasChan", "Yugen", "Yusei", "Yumea"];
+    const name = names[Math.floor(Math.random() * names.length)];
     this.lcd.clear();
     this.lcd.blinkOn();
     this.lcd.println(`Temp: ${temperature}C`, 1);
-    this.lcd.println("AVERTISSEMENT!!!", 2);
-    this.lcd.println("VEUILLEZ CALIBRER", 3);
-    this.lcd.println("POUR REFROIDIR.", 4);
+    this.lcd.println("Hello!", 2);
+    this.lcd.println("Nice to meet you!", 3);
+    this.lcd.println(`: ${name}`, 4);
   }
 
   beepPiezo() {
