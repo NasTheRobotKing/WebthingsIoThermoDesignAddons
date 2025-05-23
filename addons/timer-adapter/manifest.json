@@ -1,0 +1,124 @@
+{
+  "id": "timer-adapter",
+  "name": "Timer",
+  "short_name": "Timer",
+  "version": "1.6.2",
+  "description": "Runs for the specified number of seconds",
+  "homepage_url": "https://github.com/tim-hellhake/timer-adapter#readme",
+  "author": "Tim Hellhake",
+  "license": "MPL-2.0",
+  "manifest_version": 1,
+  "gateway_specific_settings": {
+    "webthings": {
+      "exec": "{nodeLoader} {path}",
+      "primary_type": "adapter",
+      "strict_max_version": "*",
+      "strict_min_version": "0.10.0"
+    }
+  },
+  "options": {
+    "schema": {
+      "properties": {
+        "timers": {
+          "items": {
+            "properties": {
+              "name": {
+                "title": "The name of the timer",
+                "type": "string"
+              },
+              "id": {
+                "type": "string",
+                "title": "The ID of the timer (will be generated for you)",
+                "readOnly": true
+              },
+              "seconds": {
+                "title": "The number of seconds after which the timer should elapse",
+                "type": "number"
+              }
+            },
+            "required": [
+              "name",
+              "seconds"
+            ],
+            "title": "A Timer",
+            "type": "object"
+          },
+          "title": "List of timers",
+          "type": "array"
+        },
+        "precisionTimers": {
+          "items": {
+            "properties": {
+              "name": {
+                "title": "The name of the timer",
+                "type": "string"
+              },
+              "id": {
+                "type": "string",
+                "title": "The ID of the timer (will be generated for you)",
+                "readOnly": true
+              },
+              "seconds": {
+                "title": "The number of seconds after which the timer should elapse",
+                "type": "number"
+              }
+            },
+            "required": [
+              "name",
+              "seconds"
+            ],
+            "title": "A Timer",
+            "type": "object"
+          },
+          "title": "List of precision timers (no ui updates but sub-second intervals)",
+          "type": "array"
+        },
+        "intervals": {
+          "type": "array",
+          "title": "List of intervals",
+          "items": {
+            "type": "object",
+            "title": "An interval",
+            "required": [
+              "name",
+              "seconds"
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "title": "The name of the interval"
+              },
+              "id": {
+                "type": "string",
+                "title": "The ID of the interval (will be generated for you)",
+                "readOnly": true
+              },
+              "seconds": {
+                "type": "number",
+                "title": "The number of seconds after which the interval should elapse"
+              }
+            }
+          }
+        },
+        "logging": {
+          "type": "object",
+          "title": "Log settings",
+          "properties": {
+            "debug": {
+              "title": "Enable debug logs",
+              "type": "boolean"
+            }
+          }
+        },
+        "deactivateProgressBar": {
+          "type": "boolean",
+          "title": "Hide the seconds property and the progress bar of the interval devices"
+        }
+      },
+      "required": [
+        "timers"
+      ],
+      "type": "object"
+    }
+  }
+}
