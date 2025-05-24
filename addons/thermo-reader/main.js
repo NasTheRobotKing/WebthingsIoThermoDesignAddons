@@ -270,7 +270,7 @@ class TemperatureSensor extends Thing {
     this.lcd.blinkOn();
     this.lcd.println(`Temp: ${temperature}C`, 1);
     this.lcd.println("Hello!", 2);
-    this.lcd.println("Nice to meet you!", 3);
+    this.lcd.println("Nice to see you!", 3);
     this.lcd.println(`: ${name}`, 4);
   }
 
